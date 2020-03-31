@@ -1,3 +1,2 @@
-- thing
-- thing 2
-- thing 3
+- Tuesday: write menu for spawning in planetary bodies [Estimate 3hrs]
+- Wednesday: Finalize Prototype 12pm [Estimate 2hrs]
