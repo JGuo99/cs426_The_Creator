@@ -10,9 +10,9 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-cs426_The_Creator/The_Creator/Library/SourceAssetDB
-cs426_The_Creator/The_Creator/Library/ArtifactDB
-cs426_The_Creator/The_Creator/Library/CurrentLayout-default.dwlt
+/[Ll]ibrary/SourceAssetDB
+/[Ll]ibrary/ArtifactDB
+/[Ll]ibrary/CurrentLayout-default.dwlt
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
