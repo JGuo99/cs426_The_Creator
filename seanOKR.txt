@@ -1,0 +1,3 @@
+- Tuesday: Write scripts to implement gravitational pull between objects [Estimate 3 hours]
+- Tuesday: Create planetary system [Estimate 2 hours]
+- Wednesday: Finalize Prototype 12pm [Estimate 2 hours]
