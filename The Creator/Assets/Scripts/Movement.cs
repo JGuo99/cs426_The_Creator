@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 /*
- * Resources: https://gist.github.com/gunderson/d7f096bd07874f31671306318019d996
+ * Resources: 
+ * Camera Mouse Calculation: https://gist.github.com/gunderson/d7f096bd07874f31671306318019d996
  */
 
 public class Movement : MonoBehaviour
@@ -19,6 +20,7 @@ public class Movement : MonoBehaviour
 
     private float total = 1.0f;
 
+    //Inital starting state of cursor
     private void Start() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
@@ -51,7 +53,7 @@ public class Movement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             //GetComponent(lastMouse).enable = false;
             cursorState = false;
-        } else if(Input.GetKey(KeyCode.Mouse0)) {
+        } else if(Input.GetKey(KeyCode.Mouse1)) {   //Right mouse click to hide
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Confined;
             cursorState = true;
