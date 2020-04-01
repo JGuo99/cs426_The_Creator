@@ -8,6 +8,6 @@ public class simpleRotation : MonoBehaviour
 
     void Update() {
         // Spin the object around the world origin at 20 degrees/second.
-        transform.RotateAround(target, Vector3.up, 30 * Time.deltaTime);
+        transform.RotateAround(target, Vector3.up, 15 * Time.deltaTime);
     }
 }

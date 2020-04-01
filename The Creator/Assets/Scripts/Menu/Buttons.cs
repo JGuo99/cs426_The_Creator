@@ -6,7 +6,10 @@ using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour{
 
+    [SerializeField] GameObject planet2;
+
     public void SpawnPlanet2() {
+        planet2.gameObject.SetActive(true);
         //Code to spawn planet one here
     }
 
