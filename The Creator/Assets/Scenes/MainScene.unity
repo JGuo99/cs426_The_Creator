@@ -1050,7 +1050,7 @@ MonoBehaviour:
     xAxis: 30
     yAxis: 25.8
   orbitProgress: 0.185
-  orbitPeriod: 5
+  orbitPeriod: 12
   orbitActive: 1
 --- !u!1 &283496530
 GameObject:
@@ -1793,7 +1793,7 @@ MonoBehaviour:
     xAxis: 50
     yAxis: 45.7
   orbitProgress: 0.836
-  orbitPeriod: 8
+  orbitPeriod: 16
   orbitActive: 1
 --- !u!1 &614063252
 GameObject:
@@ -2434,7 +2434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1057, y: -513.2}
+  m_AnchoredPosition: {x: -1069.1, y: -557.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &856012556
@@ -2578,7 +2578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1057, y: -507.6}
+  m_AnchoredPosition: {x: -1068.9, y: -557.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &955561973
@@ -3029,7 +3029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1057, y: -506}
+  m_AnchoredPosition: {x: -1066.2, y: -557.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013370709
@@ -3618,7 +3618,7 @@ MonoBehaviour:
     xAxis: 80
     yAxis: 20
   orbitProgress: 0
-  orbitPeriod: 10
+  orbitPeriod: 14
   orbitActive: 1
 --- !u!1 &1363739261
 GameObject:
@@ -4401,7 +4401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1057, y: -506.5}
+  m_AnchoredPosition: {x: -1068.4, y: -558}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515110536
@@ -4472,7 +4472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520407500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.024, y: 0.626, z: 0.013}
+  m_LocalPosition: {x: -0.024, y: 0.606, z: 0.013}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1927290933}
@@ -5293,7 +5293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837988813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.033, y: 0.534, z: 0.067}
+  m_LocalPosition: {x: -0.01, y: 0.534, z: 0.067}
   m_LocalScale: {x: 0.06666667, y: 0.06666667, z: 0.06666667}
   m_Children: []
   m_Father: {fileID: 1008983305}
@@ -5921,7 +5921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1057, y: -507.4}
+  m_AnchoredPosition: {x: -1067.8, y: -557.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948436698
@@ -5992,7 +5992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949422790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0016, y: 0.543, z: -0.0727}
+  m_LocalPosition: {x: 0.0016, y: 0.543, z: -0.042}
   m_LocalScale: {x: 0.040000003, y: 0.040000003, z: 0.040000003}
   m_Children: []
   m_Father: {fileID: 668414144}
@@ -6120,7 +6120,7 @@ MonoBehaviour:
     xAxis: 24
     yAxis: 15.4
   orbitProgress: 0.616
-  orbitPeriod: 3
+  orbitPeriod: 8
   orbitActive: 1
 --- !u!1 &2075397299
 GameObject:
