@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour
     public Camera gasCamera;
     public Camera terraCamera;
     public Camera lavaCamera;
+    public Camera cometCamera;
 
     //Inital starting state of cursor
     private void Start() {
@@ -37,6 +38,7 @@ public class Movement : MonoBehaviour
         gasCamera.enabled = false;
         terraCamera.enabled = false;
         lavaCamera.enabled = false;
+        cometCamera.enabled = false;
     }
 
     void Update() {
@@ -85,27 +87,33 @@ public class Movement : MonoBehaviour
             {
                 if (hit.transform.tag == "StarTag")
                 {
-                    //Debug.Log("This is a Player");
+                    Debug.Log("Star Clicked");
                     mainCamera.enabled = false;
                     starCamera.enabled = true;
                 }
                 if (hit.transform.tag == "GasTag")
                 {
-                    //Debug.Log("This is a Player");
+                    Debug.Log("Gas Clicked");
                     mainCamera.enabled = false;
                     gasCamera.enabled = true;
                 }
                 if (hit.transform.tag == "TerraTag")
                 {
-                    //Debug.Log("This is a Player");
+                    Debug.Log("Terra Clicked");
                     mainCamera.enabled = false;
                     terraCamera.enabled = true;
                 }
                 if (hit.transform.tag == "LavaTag")
                 {
-                    //Debug.Log("This is a Player");
+                    Debug.Log("Lava Clicked");
                     mainCamera.enabled = false;
                     lavaCamera.enabled = true;
+                }
+                if (hit.transform.tag == "CometTag")
+                {
+                    Debug.Log("Comet Clicked");
+                    mainCamera.enabled = false;
+                    cometCamera.enabled = true;
                 }
             }
         }
@@ -122,6 +130,7 @@ public class Movement : MonoBehaviour
             gasCamera.enabled = false;
             terraCamera.enabled = false;
             lavaCamera.enabled = false;
+            cometCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.S)) {
             positionVelocity += new Vector3(0, 0, -1);
@@ -131,6 +140,7 @@ public class Movement : MonoBehaviour
             gasCamera.enabled = false;
             terraCamera.enabled = false;
             lavaCamera.enabled = false;
+            cometCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.A)) {
             positionVelocity += new Vector3(-1, 0, 0);
@@ -140,6 +150,7 @@ public class Movement : MonoBehaviour
             gasCamera.enabled = false;
             terraCamera.enabled = false;
             lavaCamera.enabled = false;
+            cometCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
@@ -149,6 +160,7 @@ public class Movement : MonoBehaviour
             gasCamera.enabled = false;
             terraCamera.enabled = false;
             lavaCamera.enabled = false;
+            cometCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
@@ -158,6 +170,7 @@ public class Movement : MonoBehaviour
             gasCamera.enabled = false;
             terraCamera.enabled = false;
             lavaCamera.enabled = false;
+            cometCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.LeftControl)) {
             positionVelocity += new Vector3(0, -1, 0);
@@ -167,6 +180,7 @@ public class Movement : MonoBehaviour
             gasCamera.enabled = false;
             terraCamera.enabled = false;
             lavaCamera.enabled = false;
+            cometCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.Space)) {
             positionVelocity += new Vector3(0, 1, 0);
@@ -176,6 +190,7 @@ public class Movement : MonoBehaviour
             gasCamera.enabled = false;
             terraCamera.enabled = false;
             lavaCamera.enabled = false;
+            cometCamera.enabled = false;
         }
 
 

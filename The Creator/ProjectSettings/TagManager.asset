@@ -8,6 +8,7 @@ TagManager:
   - GasTag
   - TerraTag
   - LavaTag
+  - CometTag
   layers:
   - Default
   - TransparentFX

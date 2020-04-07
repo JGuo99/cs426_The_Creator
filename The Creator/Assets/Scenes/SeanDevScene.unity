@@ -395,6 +395,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99626434}
   m_CullTransparentMesh: 0
+--- !u!1 &104784528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104784529}
+  - component: {fileID: 104784531}
+  - component: {fileID: 104784530}
+  m_Layer: 0
+  m_Name: Comet Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &104784529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104784528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 938156619}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &104784530
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104784528}
+  m_Enabled: 1
+--- !u!20 &104784531
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104784528}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &108034591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,7 +2625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661954924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.636}
+  m_LocalPosition: {x: 0, y: 0, z: -1.108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1295387714}
@@ -3868,7 +3951,7 @@ GameObject:
   - component: {fileID: 938156620}
   m_Layer: 0
   m_Name: Comet Model
-  m_TagString: Untagged
+  m_TagString: CometTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3888,6 +3971,7 @@ Transform:
   - {fileID: 1666055986}
   - {fileID: 1565530758}
   - {fileID: 747413699}
+  - {fileID: 104784529}
   m_Father: {fileID: 165666002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3902,7 +3986,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &938156621
 MeshRenderer:
@@ -4263,7 +4347,7 @@ GameObject:
   - component: {fileID: 1070824049}
   - component: {fileID: 1070824048}
   m_Layer: 0
-  m_Name: Terra Model
+  m_Name: Gas Model
   m_TagString: GasTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5489,6 +5573,7 @@ GameObject:
   - component: {fileID: 1565530758}
   - component: {fileID: 1565530760}
   - component: {fileID: 1565530759}
+  - component: {fileID: 1565530761}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -10241,6 +10326,21 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1565530761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565530757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b352fc8c2ae4e83a63223dcf90656e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comet: {fileID: 938156618}
+  star: {fileID: 1295387713}
+  threshhold: 40
 --- !u!1 &1573446912
 GameObject:
   m_ObjectHideFlags: 0
@@ -10520,6 +10620,7 @@ GameObject:
   - component: {fileID: 1666055986}
   - component: {fileID: 1666055988}
   - component: {fileID: 1666055987}
+  - component: {fileID: 1666055989}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -15272,6 +15373,21 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1666055989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666055985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b352fc8c2ae4e83a63223dcf90656e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comet: {fileID: 938156618}
+  star: {fileID: 1295387713}
+  threshhold: 40
 --- !u!1 &1706273645
 GameObject:
   m_ObjectHideFlags: 0
@@ -16013,6 +16129,7 @@ MonoBehaviour:
   gasCamera: {fileID: 99073481}
   terraCamera: {fileID: 229796882}
   lavaCamera: {fileID: 481608205}
+  cometCamera: {fileID: 104784531}
 --- !u!135 &1836978987
 SphereCollider:
   m_ObjectHideFlags: 0
