@@ -1,3 +1,4 @@
-- Tuesday: Implement 3D Camera 2pm [Estimate 2hrs]
-- Tuesday: Implement billboards 5pm [Estimate 1hr]
-- Wednesday: Finalize Prototype 12pm [Estimate 2hrs]
+- Monday: Brainstrom AI/Physics/Mecanim 4pm [Estimate 2hrs]
+- Monday: Implement Mecanim 6pm [Estimate 2hr]
+- Monday: Implement Physics/Texture 9pm [Estimate 2hr]
+- Tuesday: 12pm AI [Estimate 3hrs]
