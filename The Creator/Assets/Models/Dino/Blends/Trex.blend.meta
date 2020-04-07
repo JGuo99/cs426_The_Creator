@@ -6,6 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
+  - first:
+      74: 1989289236423521904
+    second: Default Take
+  - first:
+      74: -2554839010388782441
+    second: TRex_Attack
+  - first:
+      74: -6065608701975339445
+    second: TRex_Death
+  - first:
+      74: -7300708956739190389
+    second: TRex_Idle
+  - first:
+      74: 195375344049556992
+    second: TRex_Jump
+  - first:
+      74: -1322633273685808987
+    second: TRex_Run
+  - first:
+      74: -8384255806196936779
+    second: TRex_Walk
   externalObjects: {}
   materials:
     materialImportMode: 1

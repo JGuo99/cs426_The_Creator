@@ -6,6 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
+  - first:
+      74: 1989289236423521904
+    second: Default Take
+  - first:
+      74: 7604553110983035941
+    second: Parasaurolophus_Attack
+  - first:
+      74: 7336614045305527725
+    second: Parasaurolophus_Death
+  - first:
+      74: -2843891143994721799
+    second: Parasaurolophus_Idle
+  - first:
+      74: -8350489211083392294
+    second: Parasaurolophus_Jump
+  - first:
+      74: 6116101724504295155
+    second: Parasaurolophus_Run
+  - first:
+      74: -416119474089292091
+    second: Parasaurolophus_Walk
   externalObjects: {}
   materials:
     materialImportMode: 1

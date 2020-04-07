@@ -6,6 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
+  - first:
+      74: 1989289236423521904
+    second: Default Take
+  - first:
+      74: 4919163908497421250
+    second: Triceratops_Attack
+  - first:
+      74: -9203848856273584237
+    second: Triceratops_Death
+  - first:
+      74: -3157196642054946946
+    second: Triceratops_Idle
+  - first:
+      74: 5103257053875313204
+    second: Triceratops_Jump
+  - first:
+      74: -1671322968483686328
+    second: Triceratops_Run
+  - first:
+      74: -5613627656283983842
+    second: Triceratops_Walk
   externalObjects: {}
   materials:
     materialImportMode: 1

@@ -6,6 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
+  - first:
+      74: 1989289236423521904
+    second: Default Take
+  - first:
+      74: 8545780682917849410
+    second: Apatosaurus_Attack
+  - first:
+      74: 5601459544588705280
+    second: Apatosaurus_Idle
+  - first:
+      74: 179071306345829363
+    second: Apatosaurus_Jump
+  - first:
+      74: -2978561676247460344
+    second: Apatosaurus_Run
+  - first:
+      74: 4165671426500663780
+    second: Apatosaurus_Walk
+  - first:
+      74: -3787897422102298050
+    second: Stegosaurus_Death
   externalObjects: {}
   materials:
     materialImportMode: 1

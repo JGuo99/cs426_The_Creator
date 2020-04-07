@@ -6,6 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
+  - first:
+      74: 1989289236423521904
+    second: Default Take
+  - first:
+      74: 1458842610641283290
+    second: Velociraptor_Attack
+  - first:
+      74: 1378029280241706209
+    second: Velociraptor_Death
+  - first:
+      74: 9029424281842900403
+    second: Velociraptor_Idle
+  - first:
+      74: -8605939943545001459
+    second: Velociraptor_Jump
+  - first:
+      74: -7018177251494904321
+    second: Velociraptor_Run
+  - first:
+      74: 3768655084743806977
+    second: Velociraptor_Walk
   externalObjects: {}
   materials:
     materialImportMode: 1

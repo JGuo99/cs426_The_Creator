@@ -6,6 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
+  - first:
+      74: 1989289236423521904
+    second: Default Take
+  - first:
+      74: -6782223387404726261
+    second: Stegosaurus_Attack
+  - first:
+      74: -3787897422102298050
+    second: Stegosaurus_Death
+  - first:
+      74: -3798875978429388098
+    second: Stegosaurus_Idle
+  - first:
+      74: -8060382004441985176
+    second: Stegosaurus_Jump
+  - first:
+      74: -4863598338321132407
+    second: Stegosaurus_Run
+  - first:
+      74: -6067491887233109208
+    second: Stegosaurus_Walk
   externalObjects: {}
   materials:
     materialImportMode: 1
