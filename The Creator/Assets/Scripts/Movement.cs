@@ -20,11 +20,23 @@ public class Movement : MonoBehaviour
 
     private float total = 1.0f;
 
+    public Camera mainCamera;
+    public Camera starCamera;
+    public Camera gasCamera;
+    public Camera terraCamera;
+    public Camera lavaCamera;
+
     //Inital starting state of cursor
     private void Start() {
-        Cursor.visible = false;
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
-        cursorState = true;        
+        cursorState = true;
+
+        mainCamera.enabled = true;
+        starCamera.enabled = false;
+        gasCamera.enabled = false;
+        terraCamera.enabled = false;
+        lavaCamera.enabled = false;
     }
 
     void Update() {
@@ -61,6 +73,42 @@ public class Movement : MonoBehaviour
 
         position = position * Time.deltaTime;
         transform.Translate(position);
+
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.transform.tag == "StarTag")
+                {
+                    //Debug.Log("This is a Player");
+                    mainCamera.enabled = false;
+                    starCamera.enabled = true;
+                }
+                if (hit.transform.tag == "GasTag")
+                {
+                    //Debug.Log("This is a Player");
+                    mainCamera.enabled = false;
+                    gasCamera.enabled = true;
+                }
+                if (hit.transform.tag == "TerraTag")
+                {
+                    //Debug.Log("This is a Player");
+                    mainCamera.enabled = false;
+                    terraCamera.enabled = true;
+                }
+                if (hit.transform.tag == "LavaTag")
+                {
+                    //Debug.Log("This is a Player");
+                    mainCamera.enabled = false;
+                    lavaCamera.enabled = true;
+                }
+            }
+        }
     }
 
     //Gets player inputs
@@ -68,25 +116,69 @@ public class Movement : MonoBehaviour
         Vector3 positionVelocity = new Vector3();
         if(Input.GetKey(KeyCode.W)) {
             positionVelocity += new Vector3(0, 0, 1);
+
+            mainCamera.enabled = true;
+            starCamera.enabled = false;
+            gasCamera.enabled = false;
+            terraCamera.enabled = false;
+            lavaCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.S)) {
             positionVelocity += new Vector3(0, 0, -1);
+
+            mainCamera.enabled = true;
+            starCamera.enabled = false;
+            gasCamera.enabled = false;
+            terraCamera.enabled = false;
+            lavaCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.A)) {
             positionVelocity += new Vector3(-1, 0, 0);
+
+            mainCamera.enabled = true;
+            starCamera.enabled = false;
+            gasCamera.enabled = false;
+            terraCamera.enabled = false;
+            lavaCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
+
+            mainCamera.enabled = true;
+            starCamera.enabled = false;
+            gasCamera.enabled = false;
+            terraCamera.enabled = false;
+            lavaCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
+
+            mainCamera.enabled = true;
+            starCamera.enabled = false;
+            gasCamera.enabled = false;
+            terraCamera.enabled = false;
+            lavaCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.LeftControl)) {
             positionVelocity += new Vector3(0, -1, 0);
+
+            mainCamera.enabled = true;
+            starCamera.enabled = false;
+            gasCamera.enabled = false;
+            terraCamera.enabled = false;
+            lavaCamera.enabled = false;
         }
         if(Input.GetKey(KeyCode.Space)) {
             positionVelocity += new Vector3(0, 1, 0);
+
+            mainCamera.enabled = true;
+            starCamera.enabled = false;
+            gasCamera.enabled = false;
+            terraCamera.enabled = false;
+            lavaCamera.enabled = false;
         }
+
+
         return positionVelocity;
     }
 }
