@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 3440
     height: 1347
-  m_MinSize: {x: 679, y: 492}
+  m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 4993
+  controlID: 392
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -61,9 +61,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.3089533, y: 5.32189, z: 27.971064}
+    m_Target: {x: 38.09592, y: 2.1888301, z: 45.456406}
     speed: 2
-    m_Value: {x: 7.2526803, y: 5.282081, z: 27.903032}
+    m_Value: {x: 38.075523, y: 2.1662745, z: 45.465416}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -109,13 +109,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.071235806, y: 0.9198855, z: -0.19779973, w: -0.33117577}
+    m_Target: {x: -0.27250886, y: 0.7002098, z: -0.33592954, w: -0.5680565}
     speed: 2
-    m_Value: {x: -0.07093669, y: 0.92035085, z: -0.19789982, w: -0.3297847}
+    m_Value: {x: -0.20879667, y: 0.7326948, z: -0.25737998, w: -0.59440553}
   m_Size:
-    m_Target: 7.9312925
+    m_Target: 9.392062
     speed: 2
-    m_Value: 7.931305
+    m_Value: 8.987619
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 3031
     height: 1347
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 4994
+  controlID: 393
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,10 +186,10 @@ MonoBehaviour:
     y: 0
     width: 3031
     height: 994
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 4995
+  controlID: 394
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,9 +245,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b85cffff
-      m_LastClickedID: -41800
-      m_ExpandedIDs: 6e5effff1e92ffff70fbffff1834000068340000
+      m_SelectedIDs: 70fbffff
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2afaffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -299,7 +299,7 @@ MonoBehaviour:
   - {fileID: 9}
   - {fileID: 10}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -545,21 +545,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models/SpaceShips
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models/SpaceShips
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Jeff\Documents\Unity Projects\The Creator\cs426_The_Creator\The
     Creator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fc3b0000
-    m_LastClickedID: 15356
-    m_ExpandedIDs: 0000000006370000083700000a370000223700002a370000fc3b000000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 58370000
+    m_LastClickedID: 14168
+    m_ExpandedIDs: 000000002c3700002e3700003037000032370000343700003637000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -587,7 +587,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000006370000083700000a3700002a370000fc3b000000ca9a3b
+    m_ExpandedIDs: 000000002c3700002e3700003037000032370000343700003637000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -612,9 +612,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b85cffff
-    m_LastClickedInstanceID: -41800
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 70fbffff
+    m_LastClickedInstanceID: -1168
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000b83b00001e3c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
