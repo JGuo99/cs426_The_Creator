@@ -19,28 +19,28 @@ Current Functions:
 - Alien Spaceship: This represent one of the function the NPC AI will have when they are evolve into space era.
 - Alien Auto Avoid Spaceship: This represent how the animals will function (chase/hunt) on the planet when it is created. 
 
-**Mecanim**
+**Mecanim:**
 - Dying Alien: one of the functions of NPC
 - Dancing Alien: one of the functions of NPC
 - Dinosuars: This will represent one of the evolution state
 
-**3D Physics**
+**3D Physics:**
 - Solar Flares
 - Asteroid Belt
 - Planet Orbital
 - Comet Tail
 
-**Lights**
+**Lights:**
 - Sun
 - Player
 - Distaht Star (Approachable by Player)
 
-**Textures**
+**Textures:**
 - Terra Planet
 - Lava Planet
 - Gas Planet
 
-**Sounds**
+**Sounds:**
 - Forest sound on Terra Planet
 - Thunder sound on Gas Planet
 - Lava sound on Lava Planet
