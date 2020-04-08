@@ -10,9 +10,10 @@ _**Current Build:**_ Pre Alpha 2
 
 ## Versions:
 
-#Build: Pre Alpha 2
+# Build: Pre Alpha 2
 
-Current Functions: 
+Current Functions:
+
 **AI:**
 - Comet Tail: As the comet fly closer to the sun it begans to melt and show its tail. As it flies furthur away the tails disappears
 - Alien Spaceship: This represent one of the function the NPC AI will have when they are evolve into space era.
@@ -44,7 +45,7 @@ Current Functions:
 - Thunder sound on Gas Planet
 - Lava sound on Lava Planet
 
-#Build: Pre Alpha 1
+# Build: Pre Alpha 1
 
 Current Functions: 
 - Player can click on the button on the overlay to introduce planets and moons on those planets.
