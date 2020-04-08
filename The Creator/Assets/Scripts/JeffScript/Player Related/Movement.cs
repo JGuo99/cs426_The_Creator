@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
             position = position * movementSpeed;
         }
 
-        if (Input.GetKey(KeyCode.LeftAlt)) {
+        if (Input.GetKey(KeyCode.Tab)) {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             //GetComponent(lastMouse).enable = false;
