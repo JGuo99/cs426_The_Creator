@@ -13,7 +13,7 @@ _**Current Build:**_ Pre Alpha 2
 
 ## Build: Pre Alpha 2
 
-Current Functions:
+_**Current Functions:**_
 
 **AI:**
 - Comet Tail: As the comet fly closer to the sun it begans to melt and show its tail. As it flies furthur away the tails disappears
@@ -48,7 +48,7 @@ Current Functions:
 
 ## Build: Pre Alpha 1
 
-Current Functions: 
+_**Current Functions:**_ 
 - Player can click on the button on the overlay to introduce planets and moons on those planets.
 - Player are allowed to moved around the space and see planet names.
 - The name of the planet will follow the planet as it orbits around their planetary star.
