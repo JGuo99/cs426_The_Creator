@@ -17,8 +17,8 @@ _**Current Functions:**_
 
 **AI:**
 - Comet Tail: As the comet fly closer to the sun it begans to melt and show its tail. As it flies furthur away the tails disappears [Sean]
-- Alien Spaceship: This represent one of the function the NPC AI will have when they are evolve into space era. [Anthony
-- Alien Auto Avoid Spaceship: This represent how the animals will function (chase/hunt) on the planet when it is created. [Jeff
+- Alien Spaceship: This represent one of the function the NPC AI will have when they are evolve into space era. [Anthony]
+- Alien Auto Avoid Spaceship: This represent how the animals will function (chase/hunt) on the planet when it is created. [Jeff]
 
 **Mecanim:**
 - Dying Alien: one of the functions of NPC [Sean]
