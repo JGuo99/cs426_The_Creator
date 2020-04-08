@@ -67,37 +67,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11160}
+      Script: {instanceID: 11156}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11224}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11356}
     - Class: 114
-      Script: {instanceID: 11626}
+      Script: {instanceID: 11622}
     - Class: 114
-      Script: {instanceID: 11748}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 12020}
+      Script: {instanceID: 12016}
     - Class: 114
-      Script: {instanceID: 12138}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 12576}
     - Class: 114
-      Script: {instanceID: 12624}
+      Script: {instanceID: 12620}
     - Class: 114
-      Script: {instanceID: 12694}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 12746}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 12812}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 12954}
+      Script: {instanceID: 12950}
     - Class: 114
-      Script: {instanceID: 12984}
+      Script: {instanceID: 12980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -648,5 +648,5 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/Anthony/Desktop/TheCreator/cs426_The_Creator/The Creator/Output/The
-    Creator.exe
+  playerPath: C:/Users/Jeff/Documents/Unity Projects/The Creator/cs426_The_Creator/The
+    Creator/Output/The Creator.exe
