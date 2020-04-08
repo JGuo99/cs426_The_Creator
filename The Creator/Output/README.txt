@@ -22,14 +22,14 @@ To Replicate:
 
 Current Implementation:
 AI:
-- Comet Tail: As the comet fly closer to the sun it begans to melt and show its tail. As it flies furthur away the tails disappears
-- Alien Spaceship: This represent one of the function the NPC AI will have when they are evolve into space era.
-- Alien Auto Avoid Spaceship: This represent how the animals will function (chase/hunt) on the planet when it is created.
+- Comet Tail: As the comet fly closer to the sun it begans to melt and show its tail. As it flies furthur away the tails disappears [Sean]
+- Alien Spaceship: This represent one of the function the NPC AI will have when they are evolve into space era. [Anthony]
+- Alien Auto Avoid Spaceship: This represent how the animals will function (chase/hunt) on the planet when it is created. [Jeff]
 
 Mecanim:
-- Dying Alien: one of the functions of NPC
-- Dancing Alien: one of the functions of NPC
-- Dinosuars: This will represent one of the evolution state
+- Dying Alien: one of the functions of NPC [Sean]
+- Dancing Alien: one of the functions of NPC [Anthony]
+- Dinosuars: This will represent one of the evolution state [Jeff]
 
 3D Physics:
 - Solar Flares
