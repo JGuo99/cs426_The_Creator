@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
 
     //Inital starting state of cursor
     private void Start() {
-        Cursor.visible = true;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         cursorState = true;
 
@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
             position = position * movementSpeed;
         }
 
-        /*if (Input.GetKey(KeyCode.LeftAlt)) {
+        if (Input.GetKey(KeyCode.Tab)) {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             //GetComponent(lastMouse).enable = false;
@@ -71,7 +71,7 @@ public class Movement : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Confined;
             cursorState = true;
-        }*/
+        }
 
         position = position * Time.deltaTime;
         transform.Translate(position);
