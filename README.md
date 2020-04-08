@@ -8,7 +8,7 @@ _**Current Build:**_ Pre Alpha 2
 - TAB to show mouse pointer
 - Right Mouse Button to hide mouse pointer
 
-## Versions:
+# Versions:
 
 ## Build: Pre Alpha 2
 
