@@ -30,7 +30,7 @@ Current Functions:
 - Planet Orbital
 - Comet Tail
 
-**Lgihts**
+**Lights**
 - Sun
 - Player
 - Distaht Star (Approachable by Player)
