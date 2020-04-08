@@ -1,12 +1,13 @@
 # cs426_The_Creator_Asgn6
 _**Current Build:**_ Pre Alpha 2
 
-## Input Command:
+## Input Command/Controls:
 - WASD to move
 - Left CTR to lower
 - SPACE to fly up
 - TAB to show mouse pointer
 - Right Mouse Button to hide mouse pointer
+- Players can click on planets to zoom in on them
 
 # Versions:
 
