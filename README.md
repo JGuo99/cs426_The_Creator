@@ -10,7 +10,7 @@ _**Current Build:**_ Pre Alpha 2
 
 ## Versions:
 
-# Build: Pre Alpha 2
+## Build: Pre Alpha 2
 
 Current Functions:
 
@@ -45,7 +45,7 @@ Current Functions:
 - Thunder sound on Gas Planet
 - Lava sound on Lava Planet
 
-# Build: Pre Alpha 1
+## Build: Pre Alpha 1
 
 Current Functions: 
 - Player can click on the button on the overlay to introduce planets and moons on those planets.
