@@ -27,18 +27,32 @@ public class Movement : MonoBehaviour
     public Camera lavaCamera;
     public Camera cometCamera;
 
+    bool onMainCamera;
+
     //Inital starting state of cursor
     private void Start() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         cursorState = true;
 
+        onMainCamera = false;
+        /*
+        mainCamera.GetComponent<AudioListener>().enabled = mainCamera.GetComponent<AudioListener>().enabled;
+        starCamera.GetComponent<AudioListener>().enabled = !starCamera.GetComponent<AudioListener>().enabled;
+        gasCamera.GetComponent<AudioListener>().enabled = !gasCamera.GetComponent<AudioListener>().enabled;
+        terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
+        lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
+        cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
+        */
         mainCamera.enabled = true;
         starCamera.enabled = false;
         gasCamera.enabled = false;
         terraCamera.enabled = false;
         lavaCamera.enabled = false;
         cometCamera.enabled = false;
+
+        
+
     }
 
     void Update() {
@@ -88,32 +102,27 @@ public class Movement : MonoBehaviour
                 if (hit.transform.tag == "StarTag")
                 {
                     Debug.Log("Star Clicked");
-                    mainCamera.enabled = false;
-                    starCamera.enabled = true;
+                    switchStarCamera();
                 }
                 if (hit.transform.tag == "GasTag")
                 {
                     Debug.Log("Gas Clicked");
-                    mainCamera.enabled = false;
-                    gasCamera.enabled = true;
+                    switchGasCamera();
                 }
                 if (hit.transform.tag == "TerraTag")
                 {
                     Debug.Log("Terra Clicked");
-                    mainCamera.enabled = false;
-                    terraCamera.enabled = true;
+                    switchTerraCamera();
                 }
                 if (hit.transform.tag == "LavaTag")
                 {
                     Debug.Log("Lava Clicked");
-                    mainCamera.enabled = false;
-                    lavaCamera.enabled = true;
+                    switchLavaCamera();
                 }
                 if (hit.transform.tag == "CometTag")
                 {
                     Debug.Log("Comet Clicked");
-                    mainCamera.enabled = false;
-                    cometCamera.enabled = true;
+                    switchCometCamera();
                 }
             }
         }
@@ -125,75 +134,162 @@ public class Movement : MonoBehaviour
         if(Input.GetKey(KeyCode.W)) {
             positionVelocity += new Vector3(0, 0, 1);
 
-            mainCamera.enabled = true;
-            starCamera.enabled = false;
-            gasCamera.enabled = false;
-            terraCamera.enabled = false;
-            lavaCamera.enabled = false;
-            cometCamera.enabled = false;
+            if (!onMainCamera)
+                switchMainCamera();
         }
         if(Input.GetKey(KeyCode.S)) {
             positionVelocity += new Vector3(0, 0, -1);
 
-            mainCamera.enabled = true;
-            starCamera.enabled = false;
-            gasCamera.enabled = false;
-            terraCamera.enabled = false;
-            lavaCamera.enabled = false;
-            cometCamera.enabled = false;
+            if (!onMainCamera)
+                switchMainCamera();
         }
         if(Input.GetKey(KeyCode.A)) {
             positionVelocity += new Vector3(-1, 0, 0);
 
-            mainCamera.enabled = true;
-            starCamera.enabled = false;
-            gasCamera.enabled = false;
-            terraCamera.enabled = false;
-            lavaCamera.enabled = false;
-            cometCamera.enabled = false;
+            if (!onMainCamera)
+                switchMainCamera();
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
 
-            mainCamera.enabled = true;
-            starCamera.enabled = false;
-            gasCamera.enabled = false;
-            terraCamera.enabled = false;
-            lavaCamera.enabled = false;
-            cometCamera.enabled = false;
+            if (!onMainCamera)
+                switchMainCamera();
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
 
-            mainCamera.enabled = true;
-            starCamera.enabled = false;
-            gasCamera.enabled = false;
-            terraCamera.enabled = false;
-            lavaCamera.enabled = false;
-            cometCamera.enabled = false;
+            if (!onMainCamera)
+                switchMainCamera();
         }
         if(Input.GetKey(KeyCode.LeftControl)) {
             positionVelocity += new Vector3(0, -1, 0);
 
-            mainCamera.enabled = true;
-            starCamera.enabled = false;
-            gasCamera.enabled = false;
-            terraCamera.enabled = false;
-            lavaCamera.enabled = false;
-            cometCamera.enabled = false;
+            if (!onMainCamera)
+                switchMainCamera();
         }
         if(Input.GetKey(KeyCode.Space)) {
             positionVelocity += new Vector3(0, 1, 0);
 
-            mainCamera.enabled = true;
-            starCamera.enabled = false;
-            gasCamera.enabled = false;
-            terraCamera.enabled = false;
-            lavaCamera.enabled = false;
-            cometCamera.enabled = false;
+            if (!onMainCamera)
+                switchMainCamera();
         }
 
 
         return positionVelocity;
     }
+
+    private void switchMainCamera()
+    {
+        onMainCamera = true;
+
+        starCamera.GetComponent<AudioListener>().enabled = false;
+        gasCamera.GetComponent<AudioListener>().enabled = false;
+        terraCamera.GetComponent<AudioListener>().enabled = false;
+        lavaCamera.GetComponent<AudioListener>().enabled = false;
+        cometCamera.GetComponent<AudioListener>().enabled = false;
+        mainCamera.GetComponent<AudioListener>().enabled = true;
+
+        mainCamera.enabled = true;
+        starCamera.enabled = false;
+        gasCamera.enabled = false;
+        terraCamera.enabled = false;
+        lavaCamera.enabled = false;
+        cometCamera.enabled = false;
+    }
+
+    private void switchStarCamera()
+    {
+        onMainCamera = false;
+
+        mainCamera.enabled = false;
+        starCamera.enabled = true;
+        gasCamera.enabled = false;
+        terraCamera.enabled = false;
+        lavaCamera.enabled = false;
+        cometCamera.enabled = false;
+
+        mainCamera.GetComponent<AudioListener>().enabled = false;
+        gasCamera.GetComponent<AudioListener>().enabled = false;
+        terraCamera.GetComponent<AudioListener>().enabled = false;
+        lavaCamera.GetComponent<AudioListener>().enabled = false;
+        cometCamera.GetComponent<AudioListener>().enabled = false;
+        starCamera.GetComponent<AudioListener>().enabled = true;
+    }
+
+    private void switchGasCamera()
+    {
+        onMainCamera = false;
+
+        mainCamera.GetComponent<AudioListener>().enabled = false;
+        starCamera.GetComponent<AudioListener>().enabled = false;
+        terraCamera.GetComponent<AudioListener>().enabled = false;
+        lavaCamera.GetComponent<AudioListener>().enabled = false;
+        cometCamera.GetComponent<AudioListener>().enabled = false;
+        gasCamera.GetComponent<AudioListener>().enabled = true;
+
+        mainCamera.enabled = false;
+        starCamera.enabled = false;
+        gasCamera.enabled = true;
+        terraCamera.enabled = false;
+        lavaCamera.enabled = false;
+        cometCamera.enabled = false;
+    }
+
+    private void switchTerraCamera()
+    {
+        onMainCamera = false;
+
+        mainCamera.enabled = false;
+        starCamera.enabled = false;
+        gasCamera.enabled = false;
+        terraCamera.enabled = true;
+        lavaCamera.enabled = false;
+        cometCamera.enabled = false;
+
+        mainCamera.GetComponent<AudioListener>().enabled = !mainCamera.GetComponent<AudioListener>().enabled;
+        starCamera.GetComponent<AudioListener>().enabled = !starCamera.GetComponent<AudioListener>().enabled;
+        gasCamera.GetComponent<AudioListener>().enabled = !gasCamera.GetComponent<AudioListener>().enabled;
+        lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
+        cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
+        terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
+    }
+
+    private void switchLavaCamera()
+    {
+        onMainCamera = false;
+
+        mainCamera.enabled = false;
+        starCamera.enabled = false;
+        gasCamera.enabled = false;
+        terraCamera.enabled = false;
+        lavaCamera.enabled = true;
+        cometCamera.enabled = false;
+
+        mainCamera.GetComponent<AudioListener>().enabled = !mainCamera.GetComponent<AudioListener>().enabled;
+        starCamera.GetComponent<AudioListener>().enabled = !starCamera.GetComponent<AudioListener>().enabled;
+        gasCamera.GetComponent<AudioListener>().enabled = !gasCamera.GetComponent<AudioListener>().enabled;
+        terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
+        cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
+        lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
+    }
+
+    private void switchCometCamera()
+    {
+        onMainCamera = false;
+
+        mainCamera.enabled = false;
+        starCamera.enabled = false;
+        gasCamera.enabled = false;
+        terraCamera.enabled = false;
+        lavaCamera.enabled = false;
+        cometCamera.enabled = true;
+
+        mainCamera.GetComponent<AudioListener>().enabled = !mainCamera.GetComponent<AudioListener>().enabled;
+        starCamera.GetComponent<AudioListener>().enabled = !starCamera.GetComponent<AudioListener>().enabled;
+        gasCamera.GetComponent<AudioListener>().enabled = !gasCamera.GetComponent<AudioListener>().enabled;
+        terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
+        lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
+        cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
+    }
+
 }
