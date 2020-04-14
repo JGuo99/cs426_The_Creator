@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
     private float total = 1.0f;
 
     public Camera mainCamera;
+    public Camera mouseCamera;
     public Camera starCamera;
     public Camera gasCamera;
     public Camera terraCamera;
@@ -45,24 +46,25 @@ public class Movement : MonoBehaviour
         cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
         */
         mainCamera.enabled = true;
+        mouseCamera.enabled = false;
         starCamera.enabled = false;
         gasCamera.enabled = false;
         terraCamera.enabled = false;
         lavaCamera.enabled = false;
         cometCamera.enabled = false;
-
-        
-
     }
 
     void Update() {
-        //Camera movement by mouse 
-        lastMouse = Input.mousePosition - lastMouse;
-        lastMouse = new Vector3(-lastMouse.y * cameraMovementSpeed, lastMouse.x * cameraMovementSpeed, 0);
-        lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
-        transform.eulerAngles = lastMouse;
-        lastMouse = Input.mousePosition;
-         
+        if (cursorState)
+        {
+            //Camera movement by mouse 
+            lastMouse = Input.mousePosition - lastMouse;
+            lastMouse = new Vector3(-lastMouse.y * cameraMovementSpeed, lastMouse.x * cameraMovementSpeed, 0);
+            lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
+            transform.eulerAngles = lastMouse;
+            lastMouse = Input.mousePosition;
+        }
+
         //Keyboard command logics
         Vector3 position = GetInput();
         if(Input.GetKey(KeyCode.LeftShift)) {
@@ -74,23 +76,17 @@ public class Movement : MonoBehaviour
         }else {
             total = Mathf.Clamp(total * 0.5f, 1f, 1000f);
             position = position * movementSpeed;
-        }
-
-        if (Input.GetKey(KeyCode.Tab)) {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            //GetComponent(lastMouse).enable = false;
-            cursorState = false;
-        } else if(Input.GetKey(KeyCode.Mouse1)) {   //Right mouse click to hide
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Confined;
-            cursorState = true;
-        }
+        }    
 
         position = position * Time.deltaTime;
         transform.Translate(position);
 
-
+        //Mouse Deteching
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            cursorState = !cursorState;
+            toggleMouse();
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -126,6 +122,21 @@ public class Movement : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void toggleMouse()
+    {
+        if (cursorState)
+        {
+            switchMouseCamera();
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            switchMainCamera();
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        Cursor.visible = !cursorState;
     }
 
     //Gets player inputs
@@ -190,6 +201,7 @@ public class Movement : MonoBehaviour
         mainCamera.GetComponent<AudioListener>().enabled = true;
 
         mainCamera.enabled = true;
+        mouseCamera.enabled = false;
         starCamera.enabled = false;
         gasCamera.enabled = false;
         terraCamera.enabled = false;
@@ -202,6 +214,7 @@ public class Movement : MonoBehaviour
         onMainCamera = false;
 
         mainCamera.enabled = false;
+        mouseCamera.enabled = false;
         starCamera.enabled = true;
         gasCamera.enabled = false;
         terraCamera.enabled = false;
@@ -228,6 +241,7 @@ public class Movement : MonoBehaviour
         gasCamera.GetComponent<AudioListener>().enabled = true;
 
         mainCamera.enabled = false;
+        mouseCamera.enabled = false;
         starCamera.enabled = false;
         gasCamera.enabled = true;
         terraCamera.enabled = false;
@@ -240,6 +254,7 @@ public class Movement : MonoBehaviour
         onMainCamera = false;
 
         mainCamera.enabled = false;
+        mouseCamera.enabled = false;
         starCamera.enabled = false;
         gasCamera.enabled = false;
         terraCamera.enabled = true;
@@ -259,6 +274,7 @@ public class Movement : MonoBehaviour
         onMainCamera = false;
 
         mainCamera.enabled = false;
+        mouseCamera.enabled = false;
         starCamera.enabled = false;
         gasCamera.enabled = false;
         terraCamera.enabled = false;
@@ -278,6 +294,7 @@ public class Movement : MonoBehaviour
         onMainCamera = false;
 
         mainCamera.enabled = false;
+        mouseCamera.enabled = false;
         starCamera.enabled = false;
         gasCamera.enabled = false;
         terraCamera.enabled = false;
@@ -290,6 +307,19 @@ public class Movement : MonoBehaviour
         terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
         lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
         cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
+    }
+
+    private void switchMouseCamera()
+    {
+        onMainCamera = false;
+
+        mainCamera.enabled = false;
+        mouseCamera.enabled = true;
+        starCamera.enabled = false;
+        gasCamera.enabled = false;
+        terraCamera.enabled = false;
+        lavaCamera.enabled = false;
+        cometCamera.enabled = false;
     }
 
 }
