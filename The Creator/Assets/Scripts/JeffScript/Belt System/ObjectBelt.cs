@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidBelt : MonoBehaviour
+public class ObjectBelt : MonoBehaviour
 {
     //This allows you to see in unity editor but can't edit (Good for debugging)
     [SerializeField] 
@@ -16,7 +16,7 @@ public class AsteroidBelt : MonoBehaviour
     [SerializeField]
     private Vector3 rotationDirection;
 
-    public void SetupAsteroidBelt(float _speed, float _rotationSpeed, GameObject _parent, bool _rotationClockwise) {
+    public void SetupObjectBelt(float _speed, float _rotationSpeed, GameObject _parent, bool _rotationClockwise) {
         orbitSpeed = _speed;
         parent = _parent;
         rotationClockwise = _rotationClockwise;

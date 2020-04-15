@@ -6058,12 +6058,63 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: asteroidPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: asteroidAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: innerRadiusFromStar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: outerRadiusFromStar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: height
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: clockwiseRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: minOrbitSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: maxOrbitSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: minRotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: maxRotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9150106671713312772, guid: 510427a8e212d4da9a11c915f6035ea7,
         type: 3}
       propertyPath: m_Name
       value: Star
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8304426783337774215, guid: 510427a8e212d4da9a11c915f6035ea7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 510427a8e212d4da9a11c915f6035ea7, type: 3}
 --- !u!1 &492301018 stripped
 GameObject:
@@ -6095,6 +6146,36 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 492301017}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &492301023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2739159499746613657, guid: 510427a8e212d4da9a11c915f6035ea7,
+    type: 3}
+  m_PrefabInstance: {fileID: 492301017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &492301024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492301023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3269c1478922e2f458ff3f5152fc7412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 825020556288111706, guid: fa6827e337442224ba1295db23eee7ba,
+    type: 3}
+  objectAmount: 2500
+  seed: 0
+  innerRadiusFromStar: 150
+  outerRadiusFromStar: 200
+  height: 20
+  clockwiseRotation: 1
+  minOrbitSpeed: 0.25
+  maxOrbitSpeed: 2
+  minRotationSpeed: 1
+  maxRotationSpeed: 20
 --- !u!1 &552990310
 GameObject:
   m_ObjectHideFlags: 0

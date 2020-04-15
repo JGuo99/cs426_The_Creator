@@ -55,9 +55,9 @@ public class BeltSetting : MonoBehaviour
             worldPosition = transform.position + worldOffset; //Get distance and add to position
 
             //This will randomly place new generated asteroids with randomly generated rotation 
-            GameObject newAsteroid = Instantiate(objectPrefab, worldPosition, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
-            newAsteroid.AddComponent<AsteroidBelt>().SetupAsteroidBelt(Random.Range(minOrbitSpeed, maxOrbitSpeed), Random.Range(minRotationSpeed, maxRotationSpeed), gameObject, clockwiseRotation);
-            newAsteroid.transform.SetParent(transform); //This will set the parent (belt) of whatever the new asteroid spwan on
+            GameObject newObject = Instantiate(objectPrefab, worldPosition, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
+            newObject.AddComponent<ObjectBelt>().SetupObjectBelt(Random.Range(minOrbitSpeed, maxOrbitSpeed), Random.Range(minRotationSpeed, maxRotationSpeed), gameObject, clockwiseRotation);
+            newObject.transform.SetParent(transform); //This will set the parent (belt) of whatever the new asteroid spwan on
             
         }
     }
