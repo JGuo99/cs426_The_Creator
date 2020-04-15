@@ -50,7 +50,7 @@ public class BeltSpwaner : MonoBehaviour
 
             } while (float.IsNaN(z) && float.IsNaN(x)); //Allows unity to search until vaild x and z
 
-            localPosition = new Vector3(x, y, z); //Helps translate from locoal position to world position
+            localPosition = new Vector3(x, y, z); //Helps translate from local position to world position
             worldOffset = transform.rotation * localPosition; //Rotate object correctly base on position
             worldPosition = transform.position + worldOffset; //Get distance and add to position
 
