@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     float cameraMovementSpeed = 0.20f; //Mouse Sensitifity
     private Vector3 lastMouse = new Vector3(255, 255, 255); //Inital Camera Place
     bool cursorState;
+    bool waitOn;
 
     private float total = 1.0f;
 
@@ -63,29 +64,34 @@ public class Movement : MonoBehaviour
             lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
             transform.eulerAngles = lastMouse;
             lastMouse = Input.mousePosition;
+            //}
+
+            //Keyboard command logics
+            Vector3 position = GetInput();
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                total += Time.deltaTime;
+                position = position * total * boostMovement;
+                position.x = Mathf.Clamp(position.x, -maxMovementSpeed, maxMovementSpeed);
+                position.y = Mathf.Clamp(position.y, -maxMovementSpeed, maxMovementSpeed);
+                position.z = Mathf.Clamp(position.z, -maxMovementSpeed, maxMovementSpeed);
+            }
+            else
+            {
+                total = Mathf.Clamp(total * 0.5f, 1f, 1000f);
+                position = position * movementSpeed;
+            }
+
+            position = position * Time.deltaTime;
+            transform.Translate(position);
         }
-
-        //Keyboard command logics
-        Vector3 position = GetInput();
-        if(Input.GetKey(KeyCode.LeftShift)) {
-            total += Time.deltaTime;
-            position = position * total * boostMovement;
-            position.x = Mathf.Clamp(position.x, -maxMovementSpeed, maxMovementSpeed);
-            position.y = Mathf.Clamp(position.y, -maxMovementSpeed, maxMovementSpeed);
-            position.z = Mathf.Clamp(position.z, -maxMovementSpeed, maxMovementSpeed);
-        }else {
-            total = Mathf.Clamp(total * 0.5f, 1f, 1000f);
-            position = position * movementSpeed;
-        }    
-
-        position = position * Time.deltaTime;
-        transform.Translate(position);
-
         //Mouse Deteching
         if (Input.GetKey(KeyCode.Tab))
         {
             cursorState = !cursorState;
             toggleMouse();
+            StartCoroutine(Wait());
+            
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -123,7 +129,7 @@ public class Movement : MonoBehaviour
             }
         }
     }
-
+    //Switch mouse State
     private void toggleMouse()
     {
         if (cursorState)
@@ -137,6 +143,13 @@ public class Movement : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
         }
         Cursor.visible = !cursorState;
+    }
+    //Wait Function to use in Update()
+    IEnumerator Wait()
+    {
+        waitOn = true;
+        yield return new WaitForSeconds(0.5f);
+        waitOn = false;
     }
 
     //Gets player inputs
