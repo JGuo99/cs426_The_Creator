@@ -9,7 +9,7 @@ public class PlanetName : MonoBehaviour
 
     void Update()
     {
-        Vector3 nameTagPos = Camera.main.WorldToScreenPoint(this.transform.position);
-        nameTag.transform.position = nameTagPos;
+        //Vector3 nameTagPos = Camera.main.WorldToScreenPoint(this.transform.position);
+        //nameTag.transform.position = nameTagPos;
     }
 }

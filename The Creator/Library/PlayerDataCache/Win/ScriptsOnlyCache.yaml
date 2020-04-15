@@ -1,15 +1,31 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Air
+    - AirCount
+    - AirSoundFX
+    - AlwaysOnAudio
+    - BeltSetting
     - BeltSpwaner
     - Buttons
     - CometTail
     - DinoAnimator
+    - Dirt
+    - DirtCount
+    - DirtSoundFX
+    - Evolution
+    - MenuSound
     - Movement
     - OrbitMotion
-    - PathFinding
+    - OrbitMotionSpawn
+    - PlanetEvolMenu
     - PlanetName
-    - UFOPathfinding
+    - PlanetSpawnMenu
+    - PlanetZoomSound
+    - SpawnPlanet
+    - TabSound
+    Unity.CollabProxy.Editor.dll:
+    - UnityEditor.CollabToolbarWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -46,6 +62,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
@@ -69,35 +87,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11156}
     - Class: 114
-      Script: {instanceID: 11224}
+      Script: {instanceID: 11304}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11412}
     - Class: 114
-      Script: {instanceID: 11744}
+      Script: {instanceID: 11586}
     - Class: 114
-      Script: {instanceID: 12016}
+      Script: {instanceID: 11630}
     - Class: 114
-      Script: {instanceID: 12134}
+      Script: {instanceID: 11752}
     - Class: 114
-      Script: {instanceID: 12576}
+      Script: {instanceID: 11826}
     - Class: 114
-      Script: {instanceID: 12620}
+      Script: {instanceID: 11892}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 11998}
     - Class: 114
-      Script: {instanceID: 12720}
+      Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12036}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 12292}
+    - Class: 114
+      Script: {instanceID: 12350}
+    - Class: 114
+      Script: {instanceID: 12476}
+    - Class: 114
+      Script: {instanceID: 12574}
+    - Class: 114
+      Script: {instanceID: 12616}
+    - Class: 114
+      Script: {instanceID: 12634}
+    - Class: 114
+      Script: {instanceID: 12662}
+    - Class: 114
+      Script: {instanceID: 12732}
+    - Class: 114
+      Script: {instanceID: 12784}
+    - Class: 114
+      Script: {instanceID: 12850}
+    - Class: 114
+      Script: {instanceID: 12882}
+    - Class: 114
+      Script: {instanceID: 12994}
+    - Class: 114
+      Script: {instanceID: 13026}
+    - Class: 114
+      Script: {instanceID: 13098}
+    - Class: 114
+      Script: {instanceID: 17628}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -179,6 +225,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 63ab05e968dcf7e2fa474cb2ea2b8a6a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlanetEvolMenu
+  - hash:
+      serializedVersion: 2
       Hash: 72712369a7c681ad84fc255a5ec0b333
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -227,6 +279,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: c660871323654918ccc91efc501dd6c3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Evolution
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -269,6 +327,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: 47ae48abce9af98a7ffa8e1b02193ab7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SimpleHealthBar
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -279,6 +343,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: b50f2053b50de512351097ab41a0933e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlanetSpawnMenu
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -335,6 +405,30 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 9047cf253a6d07c3cfd09c57958735ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OrbitMotionSpawn
+  - hash:
+      serializedVersion: 2
+      Hash: e860a26f48fcd0cb9bc3cda96cecbd4a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ConstructionSound
+  - hash:
+      serializedVersion: 2
+      Hash: 390088f0181e3bc83c883614bf07d674
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SimpleHealthBar_SpaceshipExample
+    className: AsteroidController
+  - hash:
+      serializedVersion: 2
+      Hash: 9d1db51d18c665436bf188318a53afa7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuSound
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -353,10 +447,22 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: dd7fd6e28ca944840d36e9da0504ac93
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeltSetting
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: planet4Rotation
+  - hash:
+      serializedVersion: 2
+      Hash: 9b4b2faadeb55d147bee08f0a3995716
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpawnPlanet
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -377,6 +483,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: c764841e4fdb8b3c871fe429fdd31ffc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AirCount
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -387,6 +499,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: planet1Rotate
+  - hash:
+      serializedVersion: 2
+      Hash: f406ebcbf42de1bd447d141184730003
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SimpleHealthBar_SpaceshipExample
+    className: PlayerController
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -401,16 +519,34 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 3f6497af7f33bfe55504c5c173f9c404
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SimpleHealthBar_SpaceshipExample
+    className: HealthPickupController
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 2536f9f12a39546b59597c9ce467440a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlanetZoomSound
+  - hash:
+      serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 4faff4c499d44d1d6f67fe199031e785
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Air
   - hash:
       serializedVersion: 2
       Hash: c9a8b80298a116835b51ba1cf9284367
@@ -449,6 +585,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 062a1574b487513bfe53b326958cdc43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SimpleHealthBar_SpaceshipExample
+    className: PlayerHealth
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -470,7 +612,25 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: AlwaysOnAudio
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: planet3Rotation
+  - hash:
+      serializedVersion: 2
+      Hash: 6aa757589d4095aa57e9c20f2c90c07c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AirSoundFX
+  - hash:
+      serializedVersion: 2
+      Hash: e2fec2b11462f021433d960d8fc77cc2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObjectBelt
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -483,6 +643,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Buttons
+  - hash:
+      serializedVersion: 2
+      Hash: d461f7fd28395b7429f4ca88cdaa24da
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DirtSoundFX
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -533,10 +699,16 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 1d2dbfe70a9231eceef5967ed764241f
+      Hash: 7de16e842e2bafd98680feb46f963b82
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement
+  - hash:
+      serializedVersion: 2
+      Hash: c764841e4fdb8b3c871fe429fdd31ffc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DirtCount
   - hash:
       serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
@@ -623,6 +795,12 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: 39abe8ae2d89af2dc09cf3c0bee60d97
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SimpleHealthBar_SpaceshipExample
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -645,8 +823,26 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 89667aaaf33bfffa49debda0ad28c29b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Dirt
+  - hash:
+      serializedVersion: 2
+      Hash: 0219e2711b2a8550077a2b7ccba751db
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TabSound
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PrefabInst
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/Jeff/Documents/Unity Projects/The Creator/cs426_The_Creator/The
-    Creator/Output/The Creator.exe
+  playerPath: C:/Users/Anthony/Desktop/TheCreator/cs426_The_Creator/The Creator/Output/The
+    Creator.exe
