@@ -1,13 +1,19 @@
 cs426_The_Creator_Asgn6
-Current Build: Pre Alpha 2
+Current Build: Alpha
 
 Input Command/Controls:
 - WASD to move
 - Left CTR to lower
 - SPACE to fly up
-- TAB to show mouse pointer
-- Right Mouse Button to hide mouse pointer
+- Left SHIFT for boost
+- TAB to toggle mouse pointer
 - Players can click on planets to zoom in on them
+- Right SHIFT to enter spawn planet menu
+- Fly over resources to gather
+
+Goal of Build:
+- Fly through asteroid belt and collect 25 dirt resources to spawn a planet.
+- Fly through asteroid belt and collect 15 air resources to evolve the Terra planet (one with dino).
 
 To Replicate:
 - To see comet tail change, wait till the comet gets close to the sun. [AI]
