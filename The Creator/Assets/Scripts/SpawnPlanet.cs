@@ -4,25 +4,31 @@ using UnityEngine;
 
 public class SpawnPlanet : MonoBehaviour
 {
-    public Rigidbody planetPrefab;
-    public GameObject spawnPoint;
-    public GameObject parentObject;
-    Transform spawnTransform;
+    [SerializeField] GameObject menuPane;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool active = false;
+
+    //public Rigidbody planetPrefab;
+    //public GameObject spawnPoint;
+    //public GameObject parentObject;
+    //Transform spawnTransform;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightShift))
         {
-            spawnTransform = spawnPoint.transform;
-            Rigidbody planetInstance;
-            planetInstance = Instantiate(planetPrefab, spawnTransform.position, spawnTransform.rotation, parentObject.transform);
+            if (active) {
+                menuPane.gameObject.SetActive(false);
+                
+            } else {
+                menuPane.gameObject.SetActive(true);
+            }
+            active = !active;
+
+            //spawnTransform = spawnPoint.transform;
+            //Rigidbody planetInstance;
+            //planetInstance = Instantiate(planetPrefab, spawnTransform.position, spawnTransform.rotation, parentObject.transform);
             //planetInstance = Instantiate(planetPrefab, spawnTransform);
         }
     }

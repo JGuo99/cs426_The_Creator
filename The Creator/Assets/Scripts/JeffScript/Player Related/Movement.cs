@@ -8,6 +8,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    //every instance of menuPane in this code relates to the evolve menu enable / disable
+    [SerializeField] GameObject menuPane;
+
     //Change The speed multiplier as playable space increases
     float movementSpeed = 10.0f; //player movement speed
     float boostMovement = 25.0f; //Aka running space
@@ -90,11 +93,11 @@ public class Movement : MonoBehaviour
             transform.Translate(position);
         }
         //Mouse Deteching
-        if (Input.GetKey(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             cursorState = !cursorState;
             toggleMouse();
-            StartCoroutine(Wait());
+            //StartCoroutine(Wait());
 
         }
 
@@ -118,6 +121,7 @@ public class Movement : MonoBehaviour
                 if (hit.transform.tag == "TerraTag")
                 {
                     Debug.Log("Terra Clicked");
+                    menuPane.gameObject.SetActive(true);
                     switchTerraCamera();
                 }
                 if (hit.transform.tag == "LavaTag")
@@ -163,42 +167,49 @@ public class Movement : MonoBehaviour
             positionVelocity += new Vector3(0, 0, 1);
 
             if (!onMainCamera)
+                menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
         if(Input.GetKey(KeyCode.S)) {
             positionVelocity += new Vector3(0, 0, -1);
 
             if (!onMainCamera)
+                menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
         if(Input.GetKey(KeyCode.A)) {
             positionVelocity += new Vector3(-1, 0, 0);
 
             if (!onMainCamera)
+                menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
 
             if (!onMainCamera)
+                menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
         if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
 
             if (!onMainCamera)
+                menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
         if(Input.GetKey(KeyCode.LeftControl)) {
             positionVelocity += new Vector3(0, -1, 0);
 
             if (!onMainCamera)
+                menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
         if(Input.GetKey(KeyCode.Space)) {
             positionVelocity += new Vector3(0, 1, 0);
 
             if (!onMainCamera)
+                menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
 
