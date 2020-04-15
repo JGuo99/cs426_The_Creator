@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
     private Vector3 lastMouse = new Vector3(255, 255, 255); //Inital Camera Place
     bool cursorState;
 
+    bool screenLocked; //Added
+
     private float total = 1.0f;
 
     public Camera mainCamera;
@@ -34,6 +36,8 @@ public class Movement : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         cursorState = true;
+
+        screenLocked = false; //Added
 
         onMainCamera = false;
         /*
@@ -56,12 +60,16 @@ public class Movement : MonoBehaviour
     }
 
     void Update() {
-        //Camera movement by mouse 
-        lastMouse = Input.mousePosition - lastMouse;
-        lastMouse = new Vector3(-lastMouse.y * cameraMovementSpeed, lastMouse.x * cameraMovementSpeed, 0);
-        lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
-        transform.eulerAngles = lastMouse;
-        lastMouse = Input.mousePosition;
+        //Camera movement by mouse
+        if (!screenLocked)
+        {
+            lastMouse = Input.mousePosition - lastMouse;
+            lastMouse = new Vector3(-lastMouse.y * cameraMovementSpeed, lastMouse.x * cameraMovementSpeed, 0);
+            lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
+            transform.eulerAngles = lastMouse;
+            lastMouse = Input.mousePosition;
+        }
+        
          
         //Keyboard command logics
         Vector3 position = GetInput();
@@ -77,11 +85,13 @@ public class Movement : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.Tab)) {
+            screenLocked = true;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             //GetComponent(lastMouse).enable = false;
             cursorState = false;
         } else if(Input.GetKey(KeyCode.Mouse1)) {   //Right mouse click to hide
+            screenLocked = false;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Confined;
             cursorState = true;
@@ -246,12 +256,12 @@ public class Movement : MonoBehaviour
         lavaCamera.enabled = false;
         cometCamera.enabled = false;
 
-        mainCamera.GetComponent<AudioListener>().enabled = !mainCamera.GetComponent<AudioListener>().enabled;
-        starCamera.GetComponent<AudioListener>().enabled = !starCamera.GetComponent<AudioListener>().enabled;
-        gasCamera.GetComponent<AudioListener>().enabled = !gasCamera.GetComponent<AudioListener>().enabled;
-        lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
-        cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
-        terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
+        mainCamera.GetComponent<AudioListener>().enabled = false;
+        starCamera.GetComponent<AudioListener>().enabled = false;
+        gasCamera.GetComponent<AudioListener>().enabled = false;
+        lavaCamera.GetComponent<AudioListener>().enabled = false;
+        cometCamera.GetComponent<AudioListener>().enabled = false;
+        terraCamera.GetComponent<AudioListener>().enabled = true;
     }
 
     private void switchLavaCamera()
@@ -265,12 +275,12 @@ public class Movement : MonoBehaviour
         lavaCamera.enabled = true;
         cometCamera.enabled = false;
 
-        mainCamera.GetComponent<AudioListener>().enabled = !mainCamera.GetComponent<AudioListener>().enabled;
-        starCamera.GetComponent<AudioListener>().enabled = !starCamera.GetComponent<AudioListener>().enabled;
-        gasCamera.GetComponent<AudioListener>().enabled = !gasCamera.GetComponent<AudioListener>().enabled;
-        terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
-        cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
-        lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
+        mainCamera.GetComponent<AudioListener>().enabled = false;
+        starCamera.GetComponent<AudioListener>().enabled = false;
+        gasCamera.GetComponent<AudioListener>().enabled = false;
+        terraCamera.GetComponent<AudioListener>().enabled = false;
+        cometCamera.GetComponent<AudioListener>().enabled = false;
+        lavaCamera.GetComponent<AudioListener>().enabled = true;
     }
 
     private void switchCometCamera()
@@ -284,12 +294,12 @@ public class Movement : MonoBehaviour
         lavaCamera.enabled = false;
         cometCamera.enabled = true;
 
-        mainCamera.GetComponent<AudioListener>().enabled = !mainCamera.GetComponent<AudioListener>().enabled;
-        starCamera.GetComponent<AudioListener>().enabled = !starCamera.GetComponent<AudioListener>().enabled;
-        gasCamera.GetComponent<AudioListener>().enabled = !gasCamera.GetComponent<AudioListener>().enabled;
-        terraCamera.GetComponent<AudioListener>().enabled = !terraCamera.GetComponent<AudioListener>().enabled;
-        lavaCamera.GetComponent<AudioListener>().enabled = !lavaCamera.GetComponent<AudioListener>().enabled;
-        cometCamera.GetComponent<AudioListener>().enabled = !cometCamera.GetComponent<AudioListener>().enabled;
+        mainCamera.GetComponent<AudioListener>().enabled = false;
+        starCamera.GetComponent<AudioListener>().enabled = false;
+        gasCamera.GetComponent<AudioListener>().enabled = false;
+        terraCamera.GetComponent<AudioListener>().enabled = false;
+        lavaCamera.GetComponent<AudioListener>().enabled = false;
+        cometCamera.GetComponent<AudioListener>().enabled = true;
     }
 
 }
