@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dirt : MonoBehaviour
 {
-    public DirtCount resourceManager;
+    public DirtCount dirtManager;
     private void OnCollisionEnter(Collision collision)
     {
        

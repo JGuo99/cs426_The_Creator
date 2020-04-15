@@ -9,15 +9,36 @@ public class PlanetEvolMenu : MonoBehaviour{
     [SerializeField] Button spawnButton;
 
     public AirCount resourceManager;
+    private Text statusText;
+    public static int stageStatus = 0;
 
-
+    private void Start()
+    {
+        statusText = GetComponent<Text>();    
+    }
     // Update is called once per frame
     void Update() {
 
-        if (AirCount.airCount >= 15) {
+        if (AirCount.airCount >= 15 && stageStatus < 3) {
 
             //enable button
             spawnButton.interactable = true;
+        }
+        if (stageStatus == 0)
+        {
+            statusText.text = "Dead Planet";
+        }
+        else if (stageStatus == 1)
+        {
+            statusText.text = "Dino Era";
+        }
+        else if (stageStatus == 2)
+        {
+            statusText.text = "Sapiens Era";
+        }
+        else
+        {
+            spawnButton.interactable = false;
         }
     }
 
@@ -30,8 +51,11 @@ public class PlanetEvolMenu : MonoBehaviour{
         //decrement counter
         AirCount.airCount -= 15;
 
+        //Set Stage Status
+        stageStatus++;
+
         //close menu
-        menuPane.gameObject.SetActive(false);
+        //menuPane.gameObject.SetActive(false);
 
     }
 }

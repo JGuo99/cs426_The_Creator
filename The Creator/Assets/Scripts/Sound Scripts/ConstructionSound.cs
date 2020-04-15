@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConstructionSound : MonoBehaviour
 {
-    public AudioClip airSound;
+    public AudioClip constructionSound;
     public AudioSource audioSource;
 
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class ConstructionSound : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightShift)){
-            audioSource.PlayOneShot(airSound, 1f);
+            audioSource.PlayOneShot(constructionSound, 1f);
         }
     }
 }
