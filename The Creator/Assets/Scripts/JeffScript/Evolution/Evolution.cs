@@ -6,15 +6,19 @@ public class Evolution : MonoBehaviour
 {
     public Texture[] textures; //Dynamically add planet texture
     public int currentTexture;
-    public Renderer rend;
+    //public Renderer rend;
 
+    private void Start()
+    {
+        
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
             currentTexture++;
             currentTexture %= textures.Length; //Prevent it from going out of bound.
-            rend.material.mainTexture = textures[currentTexture];
+            GetComponent<Renderer>().material.mainTexture = textures[currentTexture];
         }
     }
 }
