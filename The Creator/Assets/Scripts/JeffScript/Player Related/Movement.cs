@@ -90,11 +90,11 @@ public class Movement : MonoBehaviour
             transform.Translate(position);
         }
         //Mouse Deteching
-        if (Input.GetKey(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             cursorState = !cursorState;
             toggleMouse();
-            StartCoroutine(Wait());
+            //StartCoroutine(Wait());
 
         }
 
