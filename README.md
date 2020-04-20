@@ -28,6 +28,11 @@ _**Current Functions:**_
 **UI**
 - Resource counter for dirt and air
 
+**Sound**
+- Background Music
+- UI interaction sound effect
+- Resouce interaction sound effect
+
 ## Build: Pre Alpha 2
 
 _**Current Functions:**_
