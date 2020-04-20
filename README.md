@@ -21,6 +21,13 @@ _**Current Functions:**_
 - 25 Dirt to spawn a planet
 - 15 Air to evolve Terra Planet
 
+**Menu**
+- Activate evolution menu by clicking on a planet
+- Activate planet spawn menu by pressing Right SHIFT
+
+**UI**
+- Resource counter for dirt and air
+
 ## Build: Pre Alpha 2
 
 _**Current Functions:**_
