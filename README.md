@@ -16,6 +16,7 @@ _**Current Build:**_ Alpha
 ## Build: Alpha
 
 _**Current Functions:**_
+
 **Resource Collection:**
 - 25 Dirt to spawn a planet
 - 15 Air to evolve Terra Planet
