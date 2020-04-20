@@ -81,3 +81,5 @@ https://wwwtyro.github.io/space-3d/#animationSpeed=1&fov=80&nebulae=true&pointSt
 - Spaceship via Unity standard asset.
 - Planet Texture Generator via https://assetstore.unity.com/publishers/18285
 - Alien via https://www.mixamo.com/
+- Sound Effects via www.jshaw.co.uk | https://getsoundly.com/
+- Background Music via https://discordapp.com/channels/685216193430290453/685216196693590118/699787186660442112
