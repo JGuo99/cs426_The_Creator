@@ -1,5 +1,5 @@
 # cs426_The_Creator_Asgn6
-_**Current Build:**_ Pre Alpha 2
+_**Current Build:**_ Alpha
 
 ## Input Command/Controls:
 - WASD to move
@@ -8,8 +8,18 @@ _**Current Build:**_ Pre Alpha 2
 - TAB to show mouse pointer
 - Right Mouse Button to hide mouse pointer
 - Players can click on planets to zoom in on them
+- Right SHIFT to enter spawn planet menu
+- Fly over resources to gather
 
 # Versions:
+
+
+## Build: Alpha
+
+_**Current Functions:**_
+- Resource Collection
+-- 25 Dirt to spawn a planet
+-- 15 Air to evolve Terra Planet
 
 ## Build: Pre Alpha 2
 
