@@ -13,13 +13,12 @@ _**Current Build:**_ Alpha
 
 # Versions:
 
-
 ## Build: Alpha
 
 _**Current Functions:**_
-- Resource Collection
--- 25 Dirt to spawn a planet
--- 15 Air to evolve Terra Planet
+**Resource Collection:**
+- 25 Dirt to spawn a planet
+- 15 Air to evolve Terra Planet
 
 ## Build: Pre Alpha 2
 
