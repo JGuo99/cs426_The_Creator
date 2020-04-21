@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     //Camera Settings
     float cameraMovementSpeed = 0.20f; //Mouse Sensitifity
     private Vector3 lastMouse = new Vector3(255, 255, 255); //Inital Camera Place
-    bool cursorState;
+    public static bool cursorState;
     bool waitOn;
 
     bool screenLocked; //Added
@@ -143,7 +143,7 @@ public class Movement : MonoBehaviour
         if (cursorState)
         {
             switchMouseCamera();
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Confined;
         }
         else
         {
