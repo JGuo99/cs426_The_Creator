@@ -1,19 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Air
-    - AirCount
     - AirSoundFX
     - AlwaysOnAudio
     - BeltSetting
-    - BeltSpwaner
-    - Buttons
     - CometTail
+    - ControlToggle
+    - Core
+    - CoreCount
+    - CreditScene
     - DinoAnimator
     - Dirt
     - DirtCount
     - DirtSoundFX
-    - Evolution
+    - EvolStatus
+    - EvolutionMaterial
+    - Iron
+    - IronCount
     - MenuSound
     - Movement
     - OrbitMotion
@@ -23,9 +26,10 @@ ScriptsOnlyBuild:
     - PlanetSpawnMenu
     - PlanetZoomSound
     - SpawnPlanet
+    - StartScene
     - TabSound
-    Unity.CollabProxy.Editor.dll:
-    - UnityEditor.CollabToolbarWindow
+    - Water
+    - WaterCount
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -37,10 +41,110 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/CreditScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11338}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 11774}
+    - Class: 114
+      Script: {instanceID: 12188}
+    - Class: 114
+      Script: {instanceID: 12696}
+    - Class: 114
+      Script: {instanceID: 13042}
+    - Class: 114
+      Script: {instanceID: 13062}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/IntroScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11338}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 11762}
+    - Class: 114
+      Script: {instanceID: 11774}
+    - Class: 114
+      Script: {instanceID: 12188}
+    - Class: 114
+      Script: {instanceID: 12696}
+    - Class: 114
+      Script: {instanceID: 13062}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -61,8 +165,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -85,65 +187,79 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11156}
+      Script: {instanceID: 11176}
     - Class: 114
-      Script: {instanceID: 11304}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 11338}
     - Class: 114
-      Script: {instanceID: 11358}
+      Script: {instanceID: 11378}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11432}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11478}
     - Class: 114
-      Script: {instanceID: 11630}
+      Script: {instanceID: 11520}
     - Class: 114
-      Script: {instanceID: 11752}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11826}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 11892}
+      Script: {instanceID: 11774}
     - Class: 114
-      Script: {instanceID: 11998}
+      Script: {instanceID: 11800}
+    - Class: 114
+      Script: {instanceID: 11850}
+    - Class: 114
+      Script: {instanceID: 11852}
+    - Class: 114
+      Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 11996}
     - Class: 114
       Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12036}
+      Script: {instanceID: 12054}
     - Class: 114
-      Script: {instanceID: 12116}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 12158}
+      Script: {instanceID: 12146}
     - Class: 114
-      Script: {instanceID: 12292}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 12350}
+      Script: {instanceID: 12322}
     - Class: 114
-      Script: {instanceID: 12476}
+      Script: {instanceID: 12380}
     - Class: 114
-      Script: {instanceID: 12574}
+      Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12512}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12732}
+      Script: {instanceID: 12684}
     - Class: 114
-      Script: {instanceID: 12784}
+      Script: {instanceID: 12696}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 12724}
     - Class: 114
-      Script: {instanceID: 12882}
+      Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12792}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 12822}
     - Class: 114
-      Script: {instanceID: 13098}
+      Script: {instanceID: 12888}
     - Class: 114
-      Script: {instanceID: 17628}
+      Script: {instanceID: 12920}
+    - Class: 114
+      Script: {instanceID: 13062}
+    - Class: 114
+      Script: {instanceID: 13134}
+    - Class: 114
+      Script: {instanceID: 15344}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -159,6 +275,69 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/StartScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11338}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 11762}
+    - Class: 114
+      Script: {instanceID: 11774}
+    - Class: 114
+      Script: {instanceID: 12188}
+    - Class: 114
+      Script: {instanceID: 12696}
+    - Class: 114
+      Script: {instanceID: 13062}
+    - Class: 114
+      Script: {instanceID: 13134}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -225,7 +404,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 63ab05e968dcf7e2fa474cb2ea2b8a6a
+      Hash: ad0a0ea529ab273999db02e6aa59db02
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlanetEvolMenu
@@ -279,12 +458,6 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: c660871323654918ccc91efc501dd6c3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Evolution
-  - hash:
-      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -313,6 +486,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 59337240419be41ecf220ff689e41d92
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Core
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -375,6 +554,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartScene
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -385,6 +570,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: c764841e4fdb8b3c871fe429fdd31ffc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoreCount
   - hash:
       serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
@@ -405,10 +596,16 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 9047cf253a6d07c3cfd09c57958735ce
+      Hash: f452b796cbf9b4ecccda86c7ce9ea870
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OrbitMotionSpawn
+  - hash:
+      serializedVersion: 2
+      Hash: 0219e2711b2a8550077a2b7ccba751db
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TabSound
   - hash:
       serializedVersion: 2
       Hash: e860a26f48fcd0cb9bc3cda96cecbd4a
@@ -445,6 +642,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 3bb1b4bae6823a4524e793cdb8702970
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EvolStatus
   - hash:
       serializedVersion: 2
       Hash: dd7fd6e28ca944840d36e9da0504ac93
@@ -486,7 +689,7 @@ ScriptsOnlyBuild:
       Hash: c764841e4fdb8b3c871fe429fdd31ffc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AirCount
+    className: WaterCount
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -543,10 +746,10 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 4faff4c499d44d1d6f67fe199031e785
+      Hash: 6c0d11265b732fda7cd6ad76918aea6b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Air
+    className: Water
   - hash:
       serializedVersion: 2
       Hash: c9a8b80298a116835b51ba1cf9284367
@@ -615,6 +818,12 @@ ScriptsOnlyBuild:
     className: AlwaysOnAudio
   - hash:
       serializedVersion: 2
+      Hash: c764841e4fdb8b3c871fe429fdd31ffc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IronCount
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -657,6 +866,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 9b4b2faadeb55d147bee08f0a3995716
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlToggle
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -669,10 +884,22 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 50ea60d680b000c0de381a38fa80904f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Iron
+  - hash:
+      serializedVersion: 2
       Hash: 9d9e1a7448a30228346418b07051885d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CometTail
+  - hash:
+      serializedVersion: 2
+      Hash: e0a8e0887ac9cac66928d078ce36a267
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EvolutionMaterial
   - hash:
       serializedVersion: 2
       Hash: a7fb18d14c1aaafda0de475553d1ab17
@@ -753,16 +980,16 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 6b4b89b3ee6e45eca3ea8b6812970c3e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BeltSpwaner
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CreditScene
   - hash:
       serializedVersion: 2
       Hash: 4ef0f7d42cdb13479386e1f049c315aa
@@ -775,12 +1002,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
-  - hash:
-      serializedVersion: 2
-      Hash: e2fec2b11462f021433d960d8fc77cc2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AsteroidBelt
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -829,20 +1050,11 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dirt
-  - hash:
-      serializedVersion: 2
-      Hash: 0219e2711b2a8550077a2b7ccba751db
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TabSound
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PrefabInst
   platform: 5
   scenePathNames:
+  - Assets/Scenes/StartScene.unity
+  - Assets/Scenes/CreditScene.unity
+  - Assets/Scenes/IntroScene.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/Anthony/Desktop/TheCreator/cs426_The_Creator/The Creator/Output/The
-    Creator.exe
+  playerPath: C:/Users/Jeff/Documents/Unity Projects/The Creator/cs426_The_Creator/The
+    Creator/Output/The Creator.exe

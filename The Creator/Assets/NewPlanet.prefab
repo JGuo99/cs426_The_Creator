@@ -129,4 +129,5 @@ MonoBehaviour:
   revolvingObject: {fileID: 8269967734932044769}
   spawnPosObject: {fileID: 4826026902575429066, guid: 0331d4a6e8de149c9a076b0e3e669575,
     type: 3}
+  orbitPeriod: 20
   orbitActive: 1

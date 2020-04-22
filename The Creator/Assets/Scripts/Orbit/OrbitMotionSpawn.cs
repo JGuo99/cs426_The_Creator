@@ -16,7 +16,7 @@ public class OrbitMotionSpawn : MonoBehaviour
     [Range(0f, 1f)]
     //public float orbitProgress = 0f;
     float orbitProgress;
-    float orbitPeriod = 10f;
+    public float orbitPeriod = 10f;
     public bool orbitActive = true;
 
     // Start is called before the first frame update
