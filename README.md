@@ -1,5 +1,5 @@
 # cs426_The_Creator_Asgn6
-_**Current Build:**_ Alpha
+_**Current Build:**_ Beta
 
 ## Input Command/Controls:
 - WASD to move
@@ -9,9 +9,45 @@ _**Current Build:**_ Alpha
 - Right Mouse Button to hide mouse pointer
 - Players can click on planets to zoom in on them
 - Right SHIFT to enter spawn planet menu
-- Fly over resources to gather
+- Fly to gather resouces [collide]
 
 # Versions:
+
+## Build: Beta
+
+_**Current Functions:**_
+
+**Current Resources:**
+- Dirt
+- Water
+- Iron
+- Core
+
+**Shaders:**
+- Core texture is shiny and slighty reflect [Jeff]
+- Iron [Anthony]
+- Dirt texture is rougher and brighter [Sean]
+
+**UI:**
+- Quest Menu
+- Evolution Menu
+- Spawn Menu
+- Control Menu
+- Start scene, Credit scene
+- Resource Counter
+- Quest Panel Button
+
+**Texture:**
+- Updated Planet texture [more brighter too look at]
+- Resource texture are all updated to be brighter
+
+**Evolution:**
+- Evolution is more visible
+- Model Changes as planet evolve
+- Requires different resources to evolve
+
+**Story:**
+- Introduction to the game/setting
 
 ## Build: Alpha
 
