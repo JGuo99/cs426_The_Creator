@@ -27,7 +27,7 @@ public class PlanetSpawnMenu : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if (DirtCount.dirtCount >= 25) { //Changed for testing
+        if (DirtCount.dirtCount >= 25 && CoreCount.coreCount >= 1) { //Changed for testing
 
             //enable button
             spawnButton.interactable = true;
@@ -49,6 +49,7 @@ public class PlanetSpawnMenu : MonoBehaviour {
 
         //decrement counter
         DirtCount.dirtCount -= 25;
+        CoreCount.coreCount -= 1;
 
         //close menu
         menuPane.gameObject.SetActive(false);
