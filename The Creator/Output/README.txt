@@ -1,5 +1,5 @@
 cs426_The_Creator_Asgn6
-Current Build: Alpha
+Current Build: Beta
 
 Input Command/Controls:
 - WASD to move
@@ -9,11 +9,38 @@ Input Command/Controls:
 - TAB to toggle mouse pointer
 - Players can click on planets to zoom in on them
 - Right SHIFT to enter spawn planet menu
-- Fly over resources to gather
+- Fly to gather resouces [collide]
 
-Goal of Build:
-- Fly through asteroid belt and collect 25 dirt resources to spawn a planet.
-- Fly through asteroid belt and collect 15 air resources to evolve the Terra planet (one with dino).
+Current Implementation:
+
+Current Resources:
+- Dirt
+- Water
+- Iron
+- Core
+
+Shaders:
+- Core texture is shiny and slighty reflect [Jeff]
+- Iron [Anthony]
+- Dirt texture is rougher and brighter [Sean]
+
+UI:
+- Quest Menu
+- Evolution Menu
+- Spawn Menu
+- Control Menu
+- Start scene, Credit scene
+
+Texture:
+- Updated Planet texture [more brighter too look at]
+- Resource texture are all updated to be brighter
+
+Evolution:
+- Evolution is more visible
+- Model Changes as planet evolve
+- Requires different resources to evolve
+
+//End Beta Implementation
 
 To Replicate:
 - To see comet tail change, wait till the comet gets close to the sun. [AI]
@@ -25,8 +52,7 @@ To Replicate:
 	- It will pathfind to the node planets
 - On planet Eve, Jeff, and Adam...
 	- Animated alien and dinosaurs [Mecanim] 
-
-Current Implementation:
+	
 AI:
 - Comet Tail: As the comet fly closer to the sun it begans to melt and show its tail. As it flies furthur away the tails disappears [Sean]
 - Alien Spaceship: This represent one of the function the NPC AI will have when they are evolve into space era. [Anthony]
