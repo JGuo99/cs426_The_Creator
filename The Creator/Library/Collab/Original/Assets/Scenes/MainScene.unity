@@ -26714,7 +26714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPane: {fileID: 1511660295}
   spawnButton: {fileID: 121985658}
-  resourceManager: {fileID: 0}
+  resourceManager: {fileID: 1993049884}
   planetPrefab: {fileID: 4149984547946806532, guid: 3dd515e2c81454cc4938bc2330c68fcb,
     type: 3}
   spawnPoint: {fileID: 1827905992}

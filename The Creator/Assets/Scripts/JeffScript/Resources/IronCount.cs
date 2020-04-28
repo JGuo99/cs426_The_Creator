@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class IronCount : MonoBehaviour
 {
     public Text resourceText;
-    public static int ironCount = 0;
+    public static int ironCount;
 
     private void Start()
     {

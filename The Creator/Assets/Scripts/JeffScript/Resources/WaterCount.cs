@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class WaterCount : MonoBehaviour
 {
     public Text resourceText;
-    public static int waterCount = 0;
+    public static int waterCount;
 
     private void Start()
     {

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CoreCount : MonoBehaviour
 {
     public Text resourceText;
-    public static int coreCount = 0;
+    public static int coreCount;
 
     private void Start()
     {

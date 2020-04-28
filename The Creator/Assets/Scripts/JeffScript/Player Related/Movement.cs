@@ -12,9 +12,9 @@ public class Movement : MonoBehaviour
     [SerializeField] GameObject menuPane;
 
     //Change The speed multiplier as playable space increases
-    float movementSpeed = 10.0f; //player movement speed
-    float boostMovement = 25.0f; //Aka running space
-    float maxMovementSpeed = 100.0f; //Top speed of player
+    float movementSpeed = 100.0f; //player movement speed
+    float boostMovement = 300.0f; //Aka running space
+    float maxMovementSpeed = 600.0f; //Top speed of player
 
     //Camera Settings
     float cameraMovementSpeed = 0.20f; //Mouse Sensitifity
@@ -71,8 +71,7 @@ public class Movement : MonoBehaviour
             lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
             transform.eulerAngles = lastMouse;
             lastMouse = Input.mousePosition;
-            //}
-
+            
             //Keyboard command logics
             Vector3 position = GetInput();
             if (Input.GetKey(KeyCode.LeftShift))
@@ -92,13 +91,16 @@ public class Movement : MonoBehaviour
             position = position * Time.deltaTime;
             transform.Translate(position);
         }
-        //Mouse Deteching
+        //Hide/Unhide Mouse
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            //Should Center Mouse
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.None;
+
             cursorState = !cursorState;
             toggleMouse();
-            //StartCoroutine(Wait());
-
+            //StartCoroutine(Wait());            
         }
 
         if (Input.GetMouseButtonDown(0))

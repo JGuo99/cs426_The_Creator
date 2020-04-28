@@ -2463,6 +2463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
+    - target: {fileID: 7405697798733322067, guid: 956c9e81a92c5ac4bb33ef00a9eb66b7,
+        type: 3}
+      propertyPath: m_TagString
+      value: DirtRes
+      objectReference: {fileID: 0}
     - target: {fileID: 7565939969370887141, guid: 956c9e81a92c5ac4bb33ef00a9eb66b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8271,7 +8276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559890351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -35}
+  m_LocalPosition: {x: 0, y: 0, z: 493.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 728118995}
@@ -9115,7 +9120,7 @@ Transform:
   m_GameObject: {fileID: 686157747}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 17.5, y: 17.5, z: 17.5}
   m_Children: []
   m_Father: {fileID: 1655255121}
   m_RootOrder: 1
@@ -13906,7 +13911,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 2000
+  far clip plane: 8000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -14477,7 +14482,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 8000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -14792,7 +14797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -125.7, y: -0.000030518}
+  m_AnchoredPosition: {x: -125.75, y: -0.000030518}
   m_SizeDelta: {x: 184.72, y: 402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &989701296
@@ -15009,8 +15014,8 @@ MonoBehaviour:
     stage!
 
 
-    Remember, stage 2 evolution can be aquired after evolving the planet
-    to stage 1.'
+    Remember, stage 2 evolution can be aquired after evolving the planet to stage
+    1.'
 --- !u!222 &1062400665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15137,7 +15142,7 @@ Transform:
   m_GameObject: {fileID: 1087189134}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 17.5, y: 17.5, z: 17.5}
   m_Children: []
   m_Father: {fileID: 1655255121}
   m_RootOrder: 0
@@ -25070,8 +25075,7 @@ MonoBehaviour:
   m_Text: 'Collect 25 Dirt and 1 Core to build a Planet!
 
 
-    Build the planet by
-    pressing Right Shift'
+    Build the planet by pressing Right Shift'
 --- !u!222 &1171796273
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25087,6 +25091,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 947001316315936214, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 947001316315936214, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 947001316315936214, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 947001316315936214, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1058014421173484843, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1058014421173484843, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1058014421173484843, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 350
+      objectReference: {fileID: 0}
     - target: {fileID: 2678260550690830083, guid: 510427a8e212d4da9a11c915f6035ea7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25140,6 +25179,46 @@ PrefabInstance:
     - target: {fileID: 2678260550690830083, guid: 510427a8e212d4da9a11c915f6035ea7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295071130051368473, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392460045223175791, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_Range
+      value: 12000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3816920283697276369, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3816920283697276369, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3816920283697276369, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3816920283697276369, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335964218117825558, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135933902637942387, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6830188044881613187, guid: 510427a8e212d4da9a11c915f6035ea7,
@@ -25201,6 +25280,31 @@ PrefabInstance:
         type: 3}
       propertyPath: maxRotationSpeed
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341874361498315105, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860742214137200125, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860742214137200125, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860742214137200125, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860742214137200125, guid: 510427a8e212d4da9a11c915f6035ea7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 9150106671713312772, guid: 510427a8e212d4da9a11c915f6035ea7,
         type: 3}
@@ -25297,14 +25401,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2027621689}
-  objectAmount: 100
+  objectAmount: 300
   seed: 3
-  innerRadiusFromStar: 150
-  outerRadiusFromStar: 200
-  height: 15
+  innerRadiusFromStar: 6000
+  outerRadiusFromStar: 6500
+  height: 20
   clockwiseRotation: 1
   minOrbitSpeed: 0.2
-  maxOrbitSpeed: 1.8
+  maxOrbitSpeed: 0.5
   minRotationSpeed: 7.5
   maxRotationSpeed: 20
 --- !u!114 &1197122670
@@ -25320,14 +25424,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 362945417}
-  objectAmount: 5
+  objectAmount: 15
   seed: 4
-  innerRadiusFromStar: 150
-  outerRadiusFromStar: 200
-  height: 15
+  innerRadiusFromStar: 6000
+  outerRadiusFromStar: 6500
+  height: 20
   clockwiseRotation: 1
-  minOrbitSpeed: 0.5
-  maxOrbitSpeed: 3
+  minOrbitSpeed: 0.2
+  maxOrbitSpeed: 0.5
   minRotationSpeed: 10
   maxRotationSpeed: 20
 --- !u!114 &1197122671
@@ -25344,14 +25448,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 6499487223530529988, guid: fa6827e337442224ba1295db23eee7ba,
     type: 3}
-  objectAmount: 2500
+  objectAmount: 7500
   seed: 0
-  innerRadiusFromStar: 150
-  outerRadiusFromStar: 200
-  height: 20
+  innerRadiusFromStar: 6000
+  outerRadiusFromStar: 7000
+  height: 200
   clockwiseRotation: 1
-  minOrbitSpeed: 0.25
-  maxOrbitSpeed: 2
+  minOrbitSpeed: 0.5
+  maxOrbitSpeed: 1.5
   minRotationSpeed: 1
   maxRotationSpeed: 20
 --- !u!114 &1197122672
@@ -25367,14 +25471,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 1285728995}
-  objectAmount: 100
+  objectAmount: 300
   seed: 1
-  innerRadiusFromStar: 150
-  outerRadiusFromStar: 200
-  height: 15
+  innerRadiusFromStar: 6000
+  outerRadiusFromStar: 6500
+  height: 20
   clockwiseRotation: 1
   minOrbitSpeed: 0.2
-  maxOrbitSpeed: 1.8
+  maxOrbitSpeed: 0.5
   minRotationSpeed: 7.5
   maxRotationSpeed: 20
 --- !u!114 &1197122673
@@ -25390,14 +25494,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 1501669711}
-  objectAmount: 100
+  objectAmount: 300
   seed: 2
-  innerRadiusFromStar: 150
-  outerRadiusFromStar: 200
-  height: 15
+  innerRadiusFromStar: 6000
+  outerRadiusFromStar: 6500
+  height: 20
   clockwiseRotation: 1
   minOrbitSpeed: 0.2
-  maxOrbitSpeed: 1.8
+  maxOrbitSpeed: 0.5
   minRotationSpeed: 5
   maxRotationSpeed: 15
 --- !u!1 &1199840556
@@ -25837,7 +25941,7 @@ PrefabInstance:
     - target: {fileID: 2695951499334557647, guid: 24bbeef9740ce254ea8a8d2937516714,
         type: 3}
       propertyPath: m_TagString
-      value: AirEvo
+      value: DirtRes
       objectReference: {fileID: 0}
     - target: {fileID: 3121061762781731705, guid: 24bbeef9740ce254ea8a8d2937516714,
         type: 3}
@@ -25897,17 +26001,17 @@ PrefabInstance:
     - target: {fileID: 3121061762781731705, guid: 24bbeef9740ce254ea8a8d2937516714,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3121061762781731705, guid: 24bbeef9740ce254ea8a8d2937516714,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3121061762781731705, guid: 24bbeef9740ce254ea8a8d2937516714,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1818725705947437096, guid: 24bbeef9740ce254ea8a8d2937516714, type: 3}
@@ -26486,7 +26590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 182, y: -12.900024}
+  m_AnchoredPosition: {x: 182, y: -13}
   m_SizeDelta: {x: 52.26, y: 21.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1498330392
@@ -26603,17 +26707,17 @@ PrefabInstance:
     - target: {fileID: 6265681387369216750, guid: c76ca6a3631d4b248b2984b9e8bfa34f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6265681387369216750, guid: c76ca6a3631d4b248b2984b9e8bfa34f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6265681387369216750, guid: c76ca6a3631d4b248b2984b9e8bfa34f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.28
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6399017759137037912, guid: c76ca6a3631d4b248b2984b9e8bfa34f,
         type: 3}
@@ -26657,8 +26761,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.4377311
-  m_Center: {x: 0, y: -0.023039995, z: 0}
+  m_Radius: 1.437731
+  m_Center: {x: 0, y: -0.023039997, z: 0}
 --- !u!1 &1511660295
 GameObject:
   m_ObjectHideFlags: 0
@@ -26697,7 +26801,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -125.7, y: -0.000030518}
+  m_AnchoredPosition: {x: -125.75, y: -0.000030518}
   m_SizeDelta: {x: 184.72, y: 402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511660297
@@ -31961,7 +32065,7 @@ Transform:
   m_GameObject: {fileID: 1655255118}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 17.5, y: 17.5, z: 17.5}
   m_Children:
   - {fileID: 1087189135}
   - {fileID: 686157748}
@@ -32017,7 +32121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131, y: -12.900024}
+  m_AnchoredPosition: {x: 131, y: -13}
   m_SizeDelta: {x: 52.26, y: 21.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663130297
@@ -32386,7 +32490,7 @@ Transform:
   m_GameObject: {fileID: 1842415386}
   m_LocalRotation: {x: -0, y: -0, z: 0.3420201, w: 0.9396927}
   m_LocalPosition: {x: -39.5, y: -34.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 5651873}
   m_Father: {fileID: 0}
@@ -33286,6 +33390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Iron
       objectReference: {fileID: 0}
+    - target: {fileID: 2419368075528520749, guid: 8f1d2b2a4bb030745aedf0410125a060,
+        type: 3}
+      propertyPath: m_TagString
+      value: DirtRes
+      objectReference: {fileID: 0}
     - target: {fileID: 3434732262818578587, guid: 8f1d2b2a4bb030745aedf0410125a060,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33344,17 +33453,17 @@ PrefabInstance:
     - target: {fileID: 3434732262818578587, guid: 8f1d2b2a4bb030745aedf0410125a060,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3434732262818578587, guid: 8f1d2b2a4bb030745aedf0410125a060,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3434732262818578587, guid: 8f1d2b2a4bb030745aedf0410125a060,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1d2b2a4bb030745aedf0410125a060, type: 3}
@@ -33553,8 +33662,7 @@ MonoBehaviour:
   m_Text: 'Collect 15 Water, 15 Iron and 5 Dirt to evolve the planet!
 
 
-    Only
-    the planet with the mountain can be evolved [BETA]'
+    Only the planet with the mountain can be evolved [BETA]'
 --- !u!222 &2110032967
 CanvasRenderer:
   m_ObjectHideFlags: 0

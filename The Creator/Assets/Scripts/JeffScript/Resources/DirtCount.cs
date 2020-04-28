@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DirtCount : MonoBehaviour
 {
     public Text resourceText;
-    public static int dirtCount = 0;
+    public static int dirtCount;
 
     private void Start()
     {
