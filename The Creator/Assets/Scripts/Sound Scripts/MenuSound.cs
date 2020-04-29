@@ -16,7 +16,7 @@ public class MenuSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             audioSource.PlayOneShot(menuSound, 1f);
         }

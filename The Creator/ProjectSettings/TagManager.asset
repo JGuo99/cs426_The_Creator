@@ -12,6 +12,7 @@ TagManager:
   - MouseCamera
   - AirEvo
   - DirtRes
+  - Button
   layers:
   - Default
   - TransparentFX

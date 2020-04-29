@@ -22,12 +22,17 @@ public class EvolStatus : MonoBehaviour
         }
         else if (nextStage == 1)
         {
-            statusText.text = "Dino Era";
+            statusText.text = "Water Era";
         }
         else if (nextStage == 2)
         {
+            statusText.text = "Dino Era";
+        }
+        else if (nextStage == 3)
+        {
             statusText.text = "Sapiens Era";
         }
+
 
     }
 }

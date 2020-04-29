@@ -16,7 +16,7 @@ public class SpawnPlanet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (active) {
                 menuPane.gameObject.SetActive(false);

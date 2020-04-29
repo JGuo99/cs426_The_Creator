@@ -15,6 +15,9 @@ public class CometTail : MonoBehaviour
     {
         this.GetComponent<ParticleSystem>().Stop();
 
+        //For Testing
+        //this.GetComponent<ParticleSystem>().Play();
+
         closeToStar = false;
     }
 
@@ -26,13 +29,17 @@ public class CometTail : MonoBehaviour
 
         if (!closeToStar && distance < threshhold)
         {
-            //Debug.Log("Close");
+            Debug.Log("Close");
+            Debug.Log(distance);
+
             closeToStar = true;
             this.GetComponent<ParticleSystem>().Play();
         }
         if (closeToStar && distance > threshhold)
         {
-            //Debug.Log("Far");
+            Debug.Log("Far");
+            Debug.Log(distance);
+
             closeToStar = false;
             this.GetComponent<ParticleSystem>().Stop();
         }

@@ -30,11 +30,21 @@ public class EvolutionMaterial : MonoBehaviour
             staticModels[0].active = false;
             staticModels[1].active = true;
             staticModels[2].active = false;
-        }else if(nextMaterial == 2)
+            staticModels[3].active = false;
+        }
+        else if(nextMaterial == 2)
         {
             staticModels[0].active = false;
             staticModels[1].active = false;
             staticModels[2].active = true;
+            staticModels[3].active = false;
+        }
+        else if (nextMaterial == 3)
+        {
+            staticModels[0].active = false;
+            staticModels[1].active = false;
+            staticModels[2].active = false;
+            staticModels[3].active = true;
         }
     }
 }

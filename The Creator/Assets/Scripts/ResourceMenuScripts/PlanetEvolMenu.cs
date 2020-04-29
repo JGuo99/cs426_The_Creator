@@ -43,6 +43,22 @@ public class PlanetEvolMenu : MonoBehaviour{
 
     public void EvolvePlanet() {
         //evolve Planet via jeffs code
+        if (stageStatus == 0)
+        {
+            EvolStatus.nextStage += 1;
+        }
+        else if (stageStatus == 1)
+        {
+            EvolStatus.nextStage += 1;
+        }
+        else if (stageStatus == 2)
+        {
+            EvolStatus.nextStage += 1;
+        }
+        else
+        {
+            spawnButton.interactable = false;
+        }
 
         //disable button again
         spawnButton.interactable = false;

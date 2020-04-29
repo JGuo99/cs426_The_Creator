@@ -12,12 +12,12 @@ public class Movement : MonoBehaviour
     [SerializeField] GameObject menuPane;
 
     //Change The speed multiplier as playable space increases
-    float movementSpeed = 100.0f; //player movement speed
-    float boostMovement = 300.0f; //Aka running space
-    float maxMovementSpeed = 600.0f; //Top speed of player
+    float movementSpeed = 150.0f; //player movement speed
+    float boostMovement = 300.0f; //Aka space running
+    float maxMovementSpeed = 650.0f; //Top speed of player
 
     //Camera Settings
-    float cameraMovementSpeed = 0.20f; //Mouse Sensitifity
+    float cameraMovementSpeed = 0.28f; //Mouse Sensitifity
     private Vector3 lastMouse = new Vector3(255, 255, 255); //Inital Camera Place
     public static bool cursorState;
     bool waitOn;
@@ -34,7 +34,16 @@ public class Movement : MonoBehaviour
     public Camera lavaCamera;
     public Camera cometCamera;
 
+    public GameObject crosshair;
+
     bool onMainCamera;
+
+
+    //Attempt 2 Variables
+    /*public float sensitivity = 10f;
+    public float maxYAngle = 80f;
+    private Vector2 currentRotation;*/
+
 
     //Inital starting state of cursor
     private void Start() {
@@ -60,6 +69,8 @@ public class Movement : MonoBehaviour
         terraCamera.enabled = false;
         lavaCamera.enabled = false;
         cometCamera.enabled = false;
+
+        crosshair.SetActive(true);
     }
 
     void Update() {
@@ -71,7 +82,26 @@ public class Movement : MonoBehaviour
             lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
             transform.eulerAngles = lastMouse;
             lastMouse = Input.mousePosition;
-            
+
+            /*//Attempt 1
+            float x = 5 * Input.GetAxis("Mouse X");
+            float y = 5 * -Input.GetAxis("Mouse Y");
+            mainCamera.transform.Rotate(y, x, 0);
+            */
+
+            //Attempt 2 - It works but it messed up the cursor toggling
+            /*transform.eulerAngles = lastMouse;
+            currentRotation.x += Input.GetAxis("Mouse X") * sensitivity;
+            currentRotation.y -= Input.GetAxis("Mouse Y") * sensitivity;
+            currentRotation.x = Mathf.Repeat(currentRotation.x, 360);
+            currentRotation.y = Mathf.Clamp(currentRotation.y, -maxYAngle, maxYAngle);
+            mainCamera.transform.rotation = Quaternion.Euler(currentRotation.y, currentRotation.x, 0);
+
+            lastMouse.x = currentRotation.y;
+            lastMouse.y = currentRotation.x;
+            transform.eulerAngles = lastMouse;*/
+
+
             //Keyboard command logics
             Vector3 position = GetInput();
             if (Input.GetKey(KeyCode.LeftShift))
@@ -97,6 +127,16 @@ public class Movement : MonoBehaviour
             //Should Center Mouse
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.lockState = CursorLockMode.None;
+
+            if (mainCamera.enabled)
+            {
+                switchMouseCamera();
+            }
+            else
+            {
+                switchMainCamera();
+
+            }
 
             cursorState = !cursorState;
             toggleMouse();
@@ -193,13 +233,13 @@ public class Movement : MonoBehaviour
                 menuPane.gameObject.SetActive(false);
                 switchMainCamera();
         }
-        if(Input.GetKey(KeyCode.D)) {
+        /*if(Input.GetKey(KeyCode.D)) {
             positionVelocity += new Vector3(1, 0, 0);
 
             if (!onMainCamera)
                 menuPane.gameObject.SetActive(false);
                 switchMainCamera();
-        }
+        }*/
         if(Input.GetKey(KeyCode.LeftControl)) {
             positionVelocity += new Vector3(0, -1, 0);
 
@@ -237,6 +277,8 @@ public class Movement : MonoBehaviour
         terraCamera.enabled = false;
         lavaCamera.enabled = false;
         cometCamera.enabled = false;
+
+        crosshair.SetActive(true);
     }
 
     private void switchStarCamera()
@@ -257,6 +299,8 @@ public class Movement : MonoBehaviour
         lavaCamera.GetComponent<AudioListener>().enabled = false;
         cometCamera.GetComponent<AudioListener>().enabled = false;
         starCamera.GetComponent<AudioListener>().enabled = true;
+
+        crosshair.SetActive(false);
     }
 
     private void switchGasCamera()
@@ -277,6 +321,8 @@ public class Movement : MonoBehaviour
         terraCamera.enabled = false;
         lavaCamera.enabled = false;
         cometCamera.enabled = false;
+
+        crosshair.SetActive(false);
     }
 
     private void switchTerraCamera()
@@ -297,6 +343,8 @@ public class Movement : MonoBehaviour
         lavaCamera.GetComponent<AudioListener>().enabled = false;
         cometCamera.GetComponent<AudioListener>().enabled = false;
         terraCamera.GetComponent<AudioListener>().enabled = true;
+
+        crosshair.SetActive(false);
     }
 
     private void switchLavaCamera()
@@ -317,6 +365,8 @@ public class Movement : MonoBehaviour
         terraCamera.GetComponent<AudioListener>().enabled = false;
         cometCamera.GetComponent<AudioListener>().enabled = false;
         lavaCamera.GetComponent<AudioListener>().enabled = true;
+
+        crosshair.SetActive(false);
     }
 
     private void switchCometCamera()
@@ -337,6 +387,8 @@ public class Movement : MonoBehaviour
         terraCamera.GetComponent<AudioListener>().enabled = false;
         lavaCamera.GetComponent<AudioListener>().enabled = false;
         cometCamera.GetComponent<AudioListener>().enabled = true;
+
+        crosshair.SetActive(false);
     }
 
     private void switchMouseCamera()

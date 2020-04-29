@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AirSoundFX
     - AlwaysOnAudio
     - BeltSetting
+    - ButtonSoundScript
     - CometTail
     - ControlToggle
     - Core
@@ -30,6 +31,8 @@ ScriptsOnlyBuild:
     - TabSound
     - Water
     - WaterCount
+    Unity.Polybrush.dll:
+    - UnityEngine.Polybrush.PolybrushMesh
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -65,21 +68,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11338}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11774}
+      Script: {instanceID: 11870}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12338}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13042}
+      Script: {instanceID: 13286}
     - Class: 114
-      Script: {instanceID: 13062}
+      Script: {instanceID: 13308}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -114,21 +117,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11338}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11856}
     - Class: 114
-      Script: {instanceID: 11774}
+      Script: {instanceID: 11870}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12338}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13062}
+      Script: {instanceID: 13308}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -166,6 +169,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
@@ -187,79 +192,81 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11324}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11338}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 11486}
     - Class: 114
-      Script: {instanceID: 11478}
+      Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 11520}
+      Script: {instanceID: 11584}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11678}
     - Class: 114
-      Script: {instanceID: 11650}
+      Script: {instanceID: 11728}
     - Class: 114
-      Script: {instanceID: 11774}
+      Script: {instanceID: 11870}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11904}
     - Class: 114
-      Script: {instanceID: 11850}
+      Script: {instanceID: 11958}
     - Class: 114
-      Script: {instanceID: 11852}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 11918}
+      Script: {instanceID: 12034}
     - Class: 114
-      Script: {instanceID: 11996}
+      Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 12154}
     - Class: 114
-      Script: {instanceID: 12054}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12146}
+      Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12338}
     - Class: 114
-      Script: {instanceID: 12322}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 12380}
+      Script: {instanceID: 12542}
     - Class: 114
-      Script: {instanceID: 12506}
+      Script: {instanceID: 12688}
     - Class: 114
-      Script: {instanceID: 12512}
+      Script: {instanceID: 12738}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 12868}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 12892}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 12768}
+      Script: {instanceID: 12984}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 13014}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 13044}
     - Class: 114
-      Script: {instanceID: 12888}
+      Script: {instanceID: 13100}
     - Class: 114
-      Script: {instanceID: 12920}
+      Script: {instanceID: 13116}
     - Class: 114
-      Script: {instanceID: 13062}
+      Script: {instanceID: 13148}
     - Class: 114
-      Script: {instanceID: 13134}
+      Script: {instanceID: 13308}
     - Class: 114
-      Script: {instanceID: 15344}
+      Script: {instanceID: 13388}
+    - Class: 114
+      Script: {instanceID: 16728}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -303,32 +310,40 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11338}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11856}
     - Class: 114
-      Script: {instanceID: 11774}
+      Script: {instanceID: 11870}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12338}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12680}
     - Class: 114
-      Script: {instanceID: 13062}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13134}
+      Script: {instanceID: 13308}
+    - Class: 114
+      Script: {instanceID: 13388}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -381,9 +396,21 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Polybrush.dll
+    namespaceName: UnityEngine.Polybrush
+    className: ZoomOverride
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: asteroidRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraTestScript
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -396,6 +423,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8dd07f262dec8808cc79e7e54c11b7b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AgentAttraction
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -420,6 +453,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AgentMovement
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -530,6 +569,12 @@ ScriptsOnlyBuild:
     className: PlanetSpawnMenu
   - hash:
       serializedVersion: 2
+      Hash: 93951db5bbc3a8c806fe33b4ae08827d
+    assemblyName: Unity.Polybrush.dll
+    namespaceName: UnityEngine.Polybrush
+    className: OverlayRenderer
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -608,6 +653,12 @@ ScriptsOnlyBuild:
     className: TabSound
   - hash:
       serializedVersion: 2
+      Hash: 9869d29a5e06e89901b88d69e4225ddf
+    assemblyName: Unity.Polybrush.dll
+    namespaceName: Polybrush
+    className: z_AdditionalVertexStreams
+  - hash:
+      serializedVersion: 2
       Hash: e860a26f48fcd0cb9bc3cda96cecbd4a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -684,6 +735,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 9c0230a24ade6a303dd7fe28cf5974c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Attractor
   - hash:
       serializedVersion: 2
       Hash: c764841e4fdb8b3c871fe429fdd31ffc
@@ -824,6 +881,12 @@ ScriptsOnlyBuild:
     className: IronCount
   - hash:
       serializedVersion: 2
+      Hash: 9d1db51d18c665436bf188318a53afa7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonSoundScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -926,7 +989,19 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 7de16e842e2bafd98680feb46f963b82
+      Hash: a0b7a41f475d9cca45159a99fbd15451
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Movement2
+  - hash:
+      serializedVersion: 2
+      Hash: c042aadbc09f16545c490ddfea25c79e
+    assemblyName: Unity.Polybrush.dll
+    namespaceName: UnityEngine.Polybrush
+    className: PolybrushMesh
+  - hash:
+      serializedVersion: 2
+      Hash: e4aa9c0b79e4e3616f904ff2a9e1227d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement
